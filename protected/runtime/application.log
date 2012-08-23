@@ -1,0 +1,110 @@
+2012/07/13 11:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/index
+---
+2012/07/13 11:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/index
+---
+2012/07/13 11:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/index
+---
+2012/07/13 11:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/comingsoon
+---
+2012/07/13 11:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/comingsoon
+---
+2012/07/13 11:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/comingsoon
+---
+2012/07/13 11:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/comingsoon
+---
+2012/07/13 11:37:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/comingsoon
+---
+2012/07/13 11:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/comingsoon
+---
+2012/07/13 11:39:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "comingsoon".' in /home/alice/Websites/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/alice/Websites/yii/framework/web/CController.php(271): CController->missingAction('comingsoon')
+#1 /home/alice/Websites/yii/framework/web/CWebApplication.php(276): CController->run('comingsoon')
+#2 /home/alice/Websites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/comingsoon')
+#3 /home/alice/Websites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/alice/Websites/testYii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testYii/index.php?r=site/comingsoon
+HTTP_REFERER=http://localhost/testYii/index.php?r=site/index
+---

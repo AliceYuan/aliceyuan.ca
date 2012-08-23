@@ -1,0 +1,223 @@
+//SASS Variables
+$back_color: transparent;
+$overview_border_radius: 6px;
+$back_pink: #EDBBCF; //EDBBBB
+$back_color_front: #94CDCB; //light blue
+$back_color_art: #BB99EE; //light purple
+$back_color_projects: #EE8855;//orange
+$back_color_blog: #669955; //light green
+$dark_text: #443B35;
+$color2: #997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color2-hover: #645656;
+
+
+$hover-button-size-small: 31px;
+$default-button-size-small: 25px;
+$hover-button-size: 45px;
+$default-button-size: 35px;
+$default-button-color: #00CCCC;
+//SASS Import
+@import "compass";
+
+//=========================================================================
+
+
+/* =========================================================================
+ * General Blog Template Styling
+ * ==========================================================================*/
+
+body.blog{
+  background: $back_color_front;//light blue
+}
+
+body.blog .main-wrapper .main .page-title-wrapper .page-title h1 {
+  font-size: 1.17em;
+}
+
+
+/* =========================================================================
+ * Blog Page Responsive
+ * ==========================================================================*/
+
+
+/* =========================================================================
+ * Blog Page Content Styling
+ * ==========================================================================*/
+body.blog .page-content{
+  margin-top: 10em;
+  img{
+    @include border-radius(1em);
+    margin: 0 auto 2em;
+  }
+  .timeline{
+    border-left: 3px solid white;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
+    @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
+  }
+  .blog-posts{
+    p{
+      font-size: 1.25em;
+    }
+    min-height: 500px;
+    // width: 90%;
+    margin: 0 3em 0 3em;
+    color: $dark_text;
+    .content{
+      padding: 2em;
+      position: relative;
+      .tag{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 25px;
+        max-width: 50px;
+        background: green;
+      }
+    }
+    h2{
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+  div[id*='post-']{
+    background: white;
+    margin-bottom: 100px;
+    position: relative;
+    @include border-radius(2em);
+    @include box-shadow(-3px 3px 10px rgba(50, 50, 51, 0.5));
+
+  }
+
+  .post-indicator{
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: relative;
+    position: absolute;
+      top:      70px;
+      left:     -45px;
+    @include border-radius(50%);
+    @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
+    .point{
+      position: absolute;
+        top: -20px;
+        left: 25px;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-right: 20px solid white;
+    }
+  }
+  .date{
+    text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
+    position: absolute;
+      left: -100px;
+      top:  32px;
+    color: white;
+    font-weight: bold;
+    span{
+      display: block;
+      text-align: center;
+    }
+    .M{font-size:1.5em;}
+    .D{font-size: 2.5em; margin: 0.2em 0;}
+    .Y{}
+  }
+  .links{
+    clear: both;
+    width: 100%;
+    .share, .comment{
+      float: left;
+    }
+    .share .ss-icon{
+      font-size: 2em;
+    }
+  }
+  .category{
+    position: absolute;
+      right:  -1px;
+      top:    2em;
+    z-index: 3;
+    text-shadow: -1px -1px rgba(49, 49, 49, 0.5);
+    .pointer{
+      position: absolute;
+      left: 0.1em;
+      top: 0;
+      width: 0px;
+      height: 0px;
+      border-top: 1.1em solid transparent;
+      border-bottom: 1.1em solid transparent;
+      border-left: 1em solid rgba(0, 0, 0, 0.4);
+    }
+    .pointer::after{
+      content: '';
+      position: absolute;
+      left: -1.17em;
+      top: -1.0em;
+      width: 0px;
+      height: 0px;
+      border-top: 1.1em solid transparent;
+      border-bottom: 1.1em solid transparent;
+      border-left: 1em solid white;
+    }
+  }
+  .category a{
+    color: white;
+    padding: .2em 2em .2em 4em;
+    background: green;
+    border-bottom: green .2em solid;
+    display: block;
+    span{
+      width: 2em;
+      height: 2em;
+      display: block;
+      position: absolute;
+        top: 0;
+        left: 1.5em;
+      background: url('../../img/icons_sprite.png') -345px -104px;
+    }
+    p{
+      font-weight:bold;
+      // width: 1em;
+      text-transform: uppercase;
+      margin: auto;
+    }
+  }
+}
+
+.filters{
+  text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
+  clear: both;
+  color: white;
+  font-size: 1.25em;
+  h3{
+    text-align: center;
+  }
+  a{
+    color: white;
+    margin: 0 1em;
+    float:left;
+    text-align: center;
+  }
+  a:hover, a:focus{
+    font-weight: bold;
+  }
+  a:hover span, a:focus span{
+  }
+  a span{
+    display: block;
+    width: 3.5em;
+    height: 3.5em;
+    background: green;
+    margin: .5em auto;
+    border: 0.2em white solid;
+    @include transition(border 1s, width 1s, height 1s);
+    @include border-radius(50%);
+  }
+  .categories {
+    margin: 0 auto;
+    clear: both;
+  }
+}
