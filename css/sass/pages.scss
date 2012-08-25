@@ -8,6 +8,7 @@ $back_color_projects: #EE8855;//orange
 $back_color_blog: #669955; //light green
 $dark_text: #443B35;
 $color2: #997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color3: #AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
 $color2-hover: #645656;
 
 
@@ -48,8 +49,95 @@ $default-button-color: #00CCCC;
 /* =========================================================================
  * Blog Page Responsive
  * ==========================================================================*/
-
-
+@media (max-width: 479px){
+  .timeline{
+    font-size: 0.8em;
+    margin-left: 0;
+    border-left: none;
+    .date{
+      top: -3em;
+      left: 0;
+      width: 100%;
+      p{
+        text-align: center;
+      }
+      span{
+      }
+      .D{
+        font-size: 1em;
+      }
+    }
+    div[id*='post-']{
+      margin-top: 3em;
+      .post-indicator{
+        display: none;
+      }
+    }
+  }
+  .blog-posts{
+    margin: 0 1em;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  .timeline{
+    font-size: 0.9em;
+    margin-left: 0;
+    border-left: none;
+    .date{
+      top: -3em;
+      left: 0;
+      width: 100%;
+      p{
+        text-align: center;
+      }
+      span{
+      }
+    }
+    div[id*='post-']{
+      margin-top: 3em;
+      .post-indicator{
+        display: none;
+      }
+    }
+  }
+  .blog-posts{
+    margin: 0 1.5em;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .timeline{
+    margin-left: 10%;
+    border-left: 3px solid white;
+    @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
+    .date{
+      left: -7.5em;
+      top:  32px;
+      span{
+        display: block;
+      }
+    }
+  }
+  .blog-posts{
+    margin: 0 3em;
+  }
+}
+@media (min-width: 1024px) {
+  .timeline{
+    margin-left: 10%;
+    border-left: 3px solid white;
+    @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
+    .date{
+      left: -7.5em;
+      top:  32px;
+      span{
+        display: block;
+      }
+    }
+  }
+  .blog-posts{
+    margin: 0 3em;
+  }
+}
 /* =========================================================================
  * Blog Page Content Styling
  * ==========================================================================*/
@@ -60,11 +148,8 @@ $default-button-color: #00CCCC;
     margin: 0 auto 2em;
   }
   .timeline{
-    border-left: 3px solid white;
     height: 100%;
-    width: 80%;
-    margin-left: 20%;
-    @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
+    @include transition(all .5s);
   }
   .blog-posts{
     p{
@@ -72,7 +157,6 @@ $default-button-color: #00CCCC;
     }
     min-height: 500px;
     // width: 90%;
-    margin: 0 3em 0 3em;
     color: $dark_text;
     .content{
       padding: 2em;
@@ -83,13 +167,14 @@ $default-button-color: #00CCCC;
         top: 0;
         height: 25px;
         max-width: 50px;
-        background: green;
+        background: $color3;
       }
     }
     h2{
       font-size: 2em;
       font-weight: bold;
       margin-bottom: 1em;
+      margin-top: 1em;
     }
   }
   div[id*='post-']{
@@ -108,13 +193,13 @@ $default-button-color: #00CCCC;
     position: relative;
     position: absolute;
       top:      70px;
-      left:     -45px;
+      left:     -3.4em;
     @include border-radius(50%);
     @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
     .point{
       position: absolute;
         top: -20px;
-        left: 25px;
+        left: 2.35em;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
       border-right: 20px solid white;
@@ -123,12 +208,9 @@ $default-button-color: #00CCCC;
   .date{
     text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
     position: absolute;
-      left: -100px;
-      top:  32px;
     color: white;
     font-weight: bold;
     span{
-      display: block;
       text-align: center;
     }
     .M{font-size:1.5em;}
@@ -147,8 +229,8 @@ $default-button-color: #00CCCC;
   }
   .category{
     position: absolute;
-      right:  -1px;
-      top:    2em;
+      right:  0;
+      top:    1.5em;
     z-index: 3;
     text-shadow: -1px -1px rgba(49, 49, 49, 0.5);
     .pointer{
@@ -176,8 +258,8 @@ $default-button-color: #00CCCC;
   .category a{
     color: white;
     padding: .2em 2em .2em 4em;
-    background: green;
-    border-bottom: green .2em solid;
+    background: $color3;
+    // border-bottom: green .2em solid;
     display: block;
     span{
       width: 2em;
@@ -186,7 +268,7 @@ $default-button-color: #00CCCC;
       position: absolute;
         top: 0;
         left: 1.5em;
-      background: url('../../img/icons_sprite.png') -345px -104px;
+      background: url('../../img/icons_sprite.png') -345px -64px;
     }
     p{
       font-weight:bold;
@@ -197,38 +279,3 @@ $default-button-color: #00CCCC;
   }
 }
 
-.filters{
-  text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
-  clear: both;
-  color: white;
-  font-size: 1.25em;
-  h3{
-    text-align: center;
-  }
-  a{
-    color: white;
-    margin: 0 1em;
-    float:left;
-    text-align: center;
-    font-weight: bold;
-  }
-  a:hover, a:focus{
-    // font-weight: bold;
-  }
-  a:hover span, a:focus span{
-  }
-  a span{
-    display: block;
-    width: 3.5em;
-    height: 3.5em;
-    background: green;
-    margin: .5em auto;
-    border: 0.2em white solid;
-    @include transition(border 1s, width 1s, height 1s);
-    @include border-radius(50%);
-  }
-  .categories {
-    margin: 0 auto;
-    clear: both;
-  }
-}

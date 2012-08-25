@@ -46,13 +46,13 @@
   .main-menu-wrapper .nav {
     float: left;
     height: 100%;
-    width: 80%;
+    width: 78%;
   }
 
   /* line 67, ../sass/global.responsive.scss */
   .recent-posts {
-    width: 82%;
-    margin: 0 4%;
+    width: 80%;
+    margin: 0 5%;
   }
 
   /* line 73, ../sass/global.responsive.scss */
@@ -170,7 +170,7 @@
   /* line 179, ../sass/global.responsive.scss */
   .main-menu-wrapper .main-menu .nav ul li a p {
     top: 45px;
-    font-size: .80em;
+    font-size: .65em;
   }
   /* line 183, ../sass/global.responsive.scss */
   .main-menu-wrapper .main-menu .nav ul li a .button-outer {
@@ -270,8 +270,8 @@
 
   /* line 271, ../sass/global.responsive.scss */
   .recent-posts {
-    width: 90%;
-    margin: 0;
+    width: 86%;
+    margin: 0 2%;
   }
 }
 /* ==========================================================================
@@ -446,9 +446,9 @@
   }
   /* line 427, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title {
-    font-size: 350%;
-    width: 2.7em;
-    height: 2.7em;
+    font-size: 3.1em;
+    width: 2.6em;
+    height: 2.6em;
   }
   /* line 432, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 span {
@@ -470,18 +470,14 @@
   }
   /* line 450, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
-    font-size: 1.2em;
+    font-size: 1.05em;
   }
   /* line 452, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 span {
     display: block;
   }
 
-  /* line 459, ../sass/global.responsive.scss */
-  .recent-posts [class*='post-'] {
-    height: 14em;
-  }
-  /* line 462, ../sass/global.responsive.scss */
+  /* line 461, ../sass/global.responsive.scss */
   .recent-posts [class*='col-'] {
     width: 90%;
     margin: 0 5%;
@@ -489,108 +485,129 @@
     min-height: 5em;
   }
 }
-@media (min-width: 480px) and (max-width: 630px) {
-  /* line 474, ../sass/global.responsive.scss */
+@media (min-width: 480px) and (max-width: 750px) {
+  /* line 473, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan {
     top: 27% !important;
   }
-  /* line 477, ../sass/global.responsive.scss */
+  /* line 476, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 span {
     display: block;
   }
 }
 @media (min-width: 480px) and (max-width: 1023px) {
-  /* line 484, ../sass/global.responsive.scss */
+  /* line 483, ../sass/global.responsive.scss */
   .page-title-wrapper {
     margin: 5em auto;
   }
-  /* line 486, ../sass/global.responsive.scss */
+  /* line 485, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title {
-    font-size: 500%;
+    font-size: 4.7em;
     width: 2.7em;
     height: 2.7em;
   }
-  /* line 491, ../sass/global.responsive.scss */
+  /* line 490, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 span {
     line-height: 0.8em;
   }
-  /* line 494, ../sass/global.responsive.scss */
+  /* line 493, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 .alice {
     padding-right: 0.2em;
   }
 
-  /* line 503, ../sass/global.responsive.scss */
+  /* line 502, ../sass/global.responsive.scss */
   .slogan h2 > p:nth-child(1) {
-    margin-right: 220px;
+    margin-right: 10.5em;
   }
 
-  /* line 508, ../sass/global.responsive.scss */
+  /* line 507, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
-  /* line 514, ../sass/global.responsive.scss */
+  /* line 513, ../sass/global.responsive.scss */
   .recent-posts [class*='col-'] {
     width: 85%;
     margin: 0 7.5%;
     float: left;
     min-height: 5em;
   }
-  /* line 519, ../sass/global.responsive.scss */
-  .recent-posts [class*='col-'] .content .shortened-desc {
-    font-size: 1.35em;
-  }
 
-  /* line 529, ../sass/global.responsive.scss */
+  /* line 527, ../sass/global.responsive.scss */
   [class*='post-'] .content .body {
     font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) {
-  /* line 538, ../sass/global.responsive.scss */
+  /* line 536, ../sass/global.responsive.scss */
   .page-title-wrapper {
     margin: 5em auto;
   }
-  /* line 540, ../sass/global.responsive.scss */
+  /* line 538, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title {
-    font-size: 700%;
+    font-size: 6.2em;
     width: 2.7em;
     height: 2.7em;
   }
-  /* line 545, ../sass/global.responsive.scss */
+  /* line 543, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 span {
     line-height: 0.8em;
   }
-  /* line 548, ../sass/global.responsive.scss */
+  /* line 546, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 .alice {
     padding-right: 0.2em;
   }
 
-  /* line 558, ../sass/global.responsive.scss */
-  .recent-posts [class*='col-'] .content .shortened-desc {
-    font-size: 1.4em;
-  }
-
-  /* line 566, ../sass/global.responsive.scss */
+  /* line 563, ../sass/global.responsive.scss */
   [class*='post-'] .content .body {
     font-size: 1.16em;
     line-height: 1.5em;
   }
 
-  /* line 573, ../sass/global.responsive.scss */
+  /* line 570, ../sass/global.responsive.scss */
   .slogan h2 > p:nth-child(1) {
-    margin-right: 310px;
+    margin-right: 11.5em;
   }
 }
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 1024px) and (max-width: 1150px) {
+  /* line 578, ../sass/global.responsive.scss */
+  .page-title-wrapper .page-title {
+    font-size: 5.8em;
+  }
+
   /* line 582, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
 }
-@media (min-width: 1101px) {
+@media (min-width: 1151px) {
   /* line 590, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
-    font-size: 2.3em;
+    font-size: 2.1em;
+  }
+}
+/* Filters */
+@media (max-width: 479px) {
+  /* line 598, ../sass/global.responsive.scss */
+  .filters {
+    font-size: 0.75em;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  /* line 598, ../sass/global.responsive.scss */
+  .filters {
+    font-size: 1em;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 598, ../sass/global.responsive.scss */
+  .filters {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 598, ../sass/global.responsive.scss */
+  .filters {
+    font-size: 1.2em;
   }
 }

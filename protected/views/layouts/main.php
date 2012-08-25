@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/font/ss-social/stylesheet.css">
 
     <!-- Plugins stylesheet -->
-    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/plugin/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/plugin/fancyBox/source/jquery.fancybox.css" media="screen" />
 
     <!-- Custom stylesheet -->
@@ -69,6 +68,21 @@
         'type': 'iframe',
       });
     });
+
+    </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34311779-1']);
+      _gaq.push(['_setDomainName', 'aliceyuan.ca']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
     </script>
 </head>
 
@@ -117,7 +131,7 @@
       </p>
       <ul class="clearfix">
       <li> <a class="fancybox" href="<?php echo Yii::app()->createUrl('/site/contact') ?>" title="Contact Me">Contact</a></li>
-        <li> <a title="check site out on github" href="#">Github me</a></li>
+        <li> <a title="check site out on github" href="//github.com/AliceYuan/aliceyuan.ca">Github me</a></li>
         <li> <a href="#" title="subscribe to RSS">RSS Feed</a></li>
       </ul>
 

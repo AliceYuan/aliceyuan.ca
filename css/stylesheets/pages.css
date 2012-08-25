@@ -4,19 +4,19 @@
 /* ==========================================================================
  *  Blog Page
  * ==========================================================================*/
-/* line 34, ../sass/pages.scss */
+/* line 35, ../sass/pages.scss */
 .main.index .page-title-wrapper .page-title h1 {
   font-size: 1.00em;
   margin-top: 26%;
 }
 
-/* line 38, ../sass/pages.scss */
+/* line 39, ../sass/pages.scss */
 .main.blog .page-title-wrapper .page-title h1 {
   font-size: 1.17em;
   margin-top: 30%;
 }
 
-/* line 42, ../sass/pages.scss */
+/* line 43, ../sass/pages.scss */
 .main.about .page-title-wrapper .page-title h1 {
   font-size: 1.10em;
   margin-top: 40%;
@@ -26,14 +26,128 @@
 /* =========================================================================
  * Blog Page Responsive
  * ==========================================================================*/
+@media (max-width: 479px) {
+  /* line 53, ../sass/pages.scss */
+  .timeline {
+    font-size: 0.8em;
+    margin-left: 0;
+    border-left: none;
+  }
+  /* line 57, ../sass/pages.scss */
+  .timeline .date {
+    top: -3em;
+    left: 0;
+    width: 100%;
+  }
+  /* line 61, ../sass/pages.scss */
+  .timeline .date p {
+    text-align: center;
+  }
+  /* line 66, ../sass/pages.scss */
+  .timeline .date .D {
+    font-size: 1em;
+  }
+  /* line 70, ../sass/pages.scss */
+  .timeline div[id*='post-'] {
+    margin-top: 3em;
+  }
+  /* line 72, ../sass/pages.scss */
+  .timeline div[id*='post-'] .post-indicator {
+    display: none;
+  }
+
+  /* line 77, ../sass/pages.scss */
+  .blog-posts {
+    margin: 0 1em;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  /* line 82, ../sass/pages.scss */
+  .timeline {
+    font-size: 0.9em;
+    margin-left: 0;
+    border-left: none;
+  }
+  /* line 86, ../sass/pages.scss */
+  .timeline .date {
+    top: -3em;
+    left: 0;
+    width: 100%;
+  }
+  /* line 90, ../sass/pages.scss */
+  .timeline .date p {
+    text-align: center;
+  }
+  /* line 96, ../sass/pages.scss */
+  .timeline div[id*='post-'] {
+    margin-top: 3em;
+  }
+  /* line 98, ../sass/pages.scss */
+  .timeline div[id*='post-'] .post-indicator {
+    display: none;
+  }
+
+  /* line 103, ../sass/pages.scss */
+  .blog-posts {
+    margin: 0 1.5em;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 108, ../sass/pages.scss */
+  .timeline {
+    margin-left: 10%;
+    border-left: 3px solid white;
+    -webkit-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+    -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+    box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+  }
+  /* line 112, ../sass/pages.scss */
+  .timeline .date {
+    left: -7.5em;
+    top: 32px;
+  }
+  /* line 115, ../sass/pages.scss */
+  .timeline .date span {
+    display: block;
+  }
+
+  /* line 120, ../sass/pages.scss */
+  .blog-posts {
+    margin: 0 3em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 125, ../sass/pages.scss */
+  .timeline {
+    margin-left: 10%;
+    border-left: 3px solid white;
+    -webkit-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+    -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+    box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+  }
+  /* line 129, ../sass/pages.scss */
+  .timeline .date {
+    left: -7.5em;
+    top: 32px;
+  }
+  /* line 132, ../sass/pages.scss */
+  .timeline .date span {
+    display: block;
+  }
+
+  /* line 137, ../sass/pages.scss */
+  .blog-posts {
+    margin: 0 3em;
+  }
+}
 /* =========================================================================
  * Blog Page Content Styling
  * ==========================================================================*/
-/* line 56, ../sass/pages.scss */
+/* line 144, ../sass/pages.scss */
 .main.blog .page-content {
   margin-top: 10em;
 }
-/* line 58, ../sass/pages.scss */
+/* line 146, ../sass/pages.scss */
 .main.blog .page-content img {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
@@ -42,47 +156,45 @@
   border-radius: 1em;
   margin: 0 auto 2em;
 }
-/* line 62, ../sass/pages.scss */
+/* line 150, ../sass/pages.scss */
 .main.blog .page-content .timeline {
-  border-left: 3px solid white;
   height: 100%;
-  width: 80%;
-  margin-left: 20%;
-  -webkit-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
-  -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
-  box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-/* line 69, ../sass/pages.scss */
+/* line 154, ../sass/pages.scss */
 .main.blog .page-content .blog-posts {
   min-height: 500px;
-  margin: 0 3em 0 3em;
   color: #443b35;
 }
-/* line 70, ../sass/pages.scss */
+/* line 155, ../sass/pages.scss */
 .main.blog .page-content .blog-posts p {
   font-size: 1.25em;
 }
-/* line 77, ../sass/pages.scss */
+/* line 161, ../sass/pages.scss */
 .main.blog .page-content .blog-posts .content {
   padding: 2em;
   position: relative;
 }
-/* line 80, ../sass/pages.scss */
+/* line 164, ../sass/pages.scss */
 .main.blog .page-content .blog-posts .content .tag {
   position: absolute;
   right: 0;
   top: 0;
   height: 25px;
   max-width: 50px;
-  background: green;
+  background: #af6868;
 }
-/* line 89, ../sass/pages.scss */
+/* line 173, ../sass/pages.scss */
 .main.blog .page-content .blog-posts h2 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
-/* line 95, ../sass/pages.scss */
+/* line 180, ../sass/pages.scss */
 .main.blog .page-content div[id*='post-'] {
   background: white;
   margin-bottom: 100px;
@@ -96,7 +208,7 @@
   -moz-box-shadow: -3px 3px 10px rgba(50, 50, 51, 0.5);
   box-shadow: -3px 3px 10px rgba(50, 50, 51, 0.5);
 }
-/* line 104, ../sass/pages.scss */
+/* line 189, ../sass/pages.scss */
 .main.blog .page-content .post-indicator {
   width: 10px;
   height: 10px;
@@ -104,7 +216,7 @@
   position: relative;
   position: absolute;
   top: 70px;
-  left: -45px;
+  left: -3.4em;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -114,60 +226,57 @@
   -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
   box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
 }
-/* line 114, ../sass/pages.scss */
+/* line 199, ../sass/pages.scss */
 .main.blog .page-content .post-indicator .point {
   position: absolute;
   top: -20px;
-  left: 25px;
+  left: 2.35em;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
   border-right: 20px solid white;
 }
-/* line 123, ../sass/pages.scss */
+/* line 208, ../sass/pages.scss */
 .main.blog .page-content .date {
   text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
   position: absolute;
-  left: -100px;
-  top: 32px;
   color: white;
   font-weight: bold;
 }
-/* line 130, ../sass/pages.scss */
+/* line 213, ../sass/pages.scss */
 .main.blog .page-content .date span {
-  display: block;
   text-align: center;
 }
-/* line 134, ../sass/pages.scss */
+/* line 216, ../sass/pages.scss */
 .main.blog .page-content .date .M {
   font-size: 1.5em;
 }
-/* line 135, ../sass/pages.scss */
+/* line 217, ../sass/pages.scss */
 .main.blog .page-content .date .D {
   font-size: 2.5em;
   margin: 0.2em 0;
 }
-/* line 138, ../sass/pages.scss */
+/* line 220, ../sass/pages.scss */
 .main.blog .page-content .links {
   clear: both;
   width: 100%;
 }
-/* line 141, ../sass/pages.scss */
+/* line 223, ../sass/pages.scss */
 .main.blog .page-content .links .share, .main.blog .page-content .links .comment {
   float: left;
 }
-/* line 144, ../sass/pages.scss */
+/* line 226, ../sass/pages.scss */
 .main.blog .page-content .links .share .ss-icon {
   font-size: 2em;
 }
-/* line 148, ../sass/pages.scss */
+/* line 230, ../sass/pages.scss */
 .main.blog .page-content .category {
   position: absolute;
-  right: -1px;
-  top: 2em;
+  right: 0;
+  top: 1.5em;
   z-index: 3;
   text-shadow: -1px -1px rgba(49, 49, 49, 0.5);
 }
-/* line 154, ../sass/pages.scss */
+/* line 236, ../sass/pages.scss */
 .main.blog .page-content .category .pointer {
   position: absolute;
   left: 0.1em;
@@ -178,7 +287,7 @@
   border-bottom: 1.1em solid transparent;
   border-left: 1em solid rgba(0, 0, 0, 0.4);
 }
-/* line 164, ../sass/pages.scss */
+/* line 246, ../sass/pages.scss */
 .main.blog .page-content .category .pointer::after {
   content: '';
   position: absolute;
@@ -190,15 +299,14 @@
   border-bottom: 1.1em solid transparent;
   border-left: 1em solid white;
 }
-/* line 176, ../sass/pages.scss */
+/* line 258, ../sass/pages.scss */
 .main.blog .page-content .category a {
   color: white;
   padding: .2em 2em .2em 4em;
-  background: green;
-  border-bottom: green .2em solid;
+  background: #af6868;
   display: block;
 }
-/* line 182, ../sass/pages.scss */
+/* line 264, ../sass/pages.scss */
 .main.blog .page-content .category a span {
   width: 2em;
   height: 2em;
@@ -206,54 +314,11 @@
   position: absolute;
   top: 0;
   left: 1.5em;
-  background: url("../../img/icons_sprite.png") -345px -104px;
+  background: url("../../img/icons_sprite.png") -345px -64px;
 }
-/* line 191, ../sass/pages.scss */
+/* line 273, ../sass/pages.scss */
 .main.blog .page-content .category a p {
   font-weight: bold;
   text-transform: uppercase;
   margin: auto;
-}
-
-/* line 200, ../sass/pages.scss */
-.filters {
-  text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
-  clear: both;
-  color: white;
-  font-size: 1.25em;
-}
-/* line 205, ../sass/pages.scss */
-.filters h3 {
-  text-align: center;
-}
-/* line 208, ../sass/pages.scss */
-.filters a {
-  color: white;
-  margin: 0 1em;
-  float: left;
-  text-align: center;
-  font-weight: bold;
-}
-/* line 220, ../sass/pages.scss */
-.filters a span {
-  display: block;
-  width: 3.5em;
-  height: 3.5em;
-  background: green;
-  margin: .5em auto;
-  border: 0.2em white solid;
-  -webkit-transition: border 1s, width 1s, height 1s;
-  -moz-transition: border 1s, width 1s, height 1s;
-  -o-transition: border 1s, width 1s, height 1s;
-  transition: border 1s, width 1s, height 1s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-/* line 230, ../sass/pages.scss */
-.filters .categories {
-  margin: 0 auto;
-  clear: both;
 }

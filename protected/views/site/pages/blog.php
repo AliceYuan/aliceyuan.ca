@@ -21,24 +21,22 @@ $this->pageTitle=Yii::app()->name . ' - Blog';
   </div>
 
   <div class="filters">
-    <div class="categories clearfix">
-      <a href="#">
-        <span> </span>
-        tutorials
-      </a>
-      <a href="#">
-        <span> </span>
-        life
-      </a>
-      <a href="#">
-        <span> </span>
-        design
-      </a>
-      <a href="#">
-        <span> </span>
-        discovery
-      </a>
-    </div>
+
+      <?php $this->widget('application.components.FilterMenu',array(
+        'items'=>array(
+          array('label'=>'all', 'url'=>array(''), 'itemOptions'=>array('class'=>'label')),
+          array('label'=>'tutorials', 'url'=>array(''), 'itemOptions'=>array('class'=>'label')),
+          array('label'=>'life', 'url'=>array(''), 'itemOptions'=>array('class'=>'label')),
+          array('label'=>'design', 'url'=>array(''), 'itemOptions'=>array('class'=>'label')),
+        ),
+        'linkLabelWrapper'=>'p',
+        'activeCssClass'=>'active',
+        'htmlOptions'=>array('class'=>'categories clearfix',),
+        'itemTemplate'=>'
+            <span> </span>
+            {menu}
+          ',
+      )); ?>
   </div>
 
 

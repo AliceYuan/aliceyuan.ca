@@ -72,7 +72,8 @@ $default-button-color: #00CCCC;
       color: grey;
       position: absolute;
       background: transparent;
-      height: 20px;
+      height: 2em;
+      font-size: 0.9em;
       @include transition( top 1s, color 0.5s, background 0.5s 0.2s);
     }
     a:hover p, a:focus p{// a:active p{

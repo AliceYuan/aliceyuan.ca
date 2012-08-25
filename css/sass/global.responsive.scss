@@ -60,13 +60,13 @@ $default-button-color: #00CCCC;
     .nav{
       float: left;
       height: 100%;
-      width: 80%;
+      width: 78%;
     }
   }
 
   .recent-posts{
-    width: 82%;
-    margin: 0 4%;
+    width: 80%;
+    margin: 0 5%;
   }
 
 
@@ -178,7 +178,7 @@ $default-button-color: #00CCCC;
   .main-menu-wrapper .main-menu .nav ul li a{
     p{
       top: 45px;
-      font-size: .80em;
+      font-size: .65em;
     }
     .button-outer {
       height:   40px;
@@ -269,8 +269,8 @@ $default-button-color: #00CCCC;
   }
 
   .recent-posts{
-    width: 90%;
-    margin: 0;
+    width: 86%;
+    margin: 0 2%;
   }
 }
 /* ==========================================================================
@@ -425,9 +425,9 @@ $default-button-color: #00CCCC;
   .page-title-wrapper{
     margin: 5em auto;
     .page-title{
-      font-size: 100%*3.5;
-      width: 2.7em;
-      height: 2.7em;
+      font-size: 3.1em;
+      width: 2.6em;
+      height: 2.6em;
       h1{
         span{
           line-height: 0.8em;
@@ -448,7 +448,7 @@ $default-button-color: #00CCCC;
   .page-title-wrapper .slogan{
     top: 27% !important;
     h2{
-      font-size: 1.2em;
+      font-size: 1.05em;
       span{
         display: block;
       }
@@ -457,7 +457,6 @@ $default-button-color: #00CCCC;
 
   .recent-posts{
     [class*='post-']{
-      height: 14em;
     }
     [class*='col-']{
       width: 90%;
@@ -470,7 +469,7 @@ $default-button-color: #00CCCC;
   }
 }
 
-@media (min-width: 480px) and (max-width: 630px) {
+@media (min-width: 480px) and (max-width: 750px) {
   .page-title-wrapper .slogan{
     top: 27% !important;
     h2{
@@ -484,7 +483,7 @@ $default-button-color: #00CCCC;
   .page-title-wrapper{
     margin: 5em auto;
     .page-title{
-      font-size: 100%*5;
+      font-size: 4.7em;
       width: 2.7em;
       height: 2.7em;
       h1{
@@ -501,12 +500,12 @@ $default-button-color: #00CCCC;
   }
   .slogan{
     h2 > p:nth-child(1) {
-      margin-right: 220px;
+      margin-right: 10.5em;
     }
   }
   .page-title-wrapper .slogan{
     h2{
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
   }
 
@@ -517,7 +516,6 @@ $default-button-color: #00CCCC;
       float: left;
       min-height: 5em;
       .content .shortened-desc{
-        font-size: 1.35em;
       }
     }
     .col-1{
@@ -538,7 +536,7 @@ $default-button-color: #00CCCC;
   .page-title-wrapper{
     margin: 5em auto;
     .page-title{
-      font-size: 100%*7;
+      font-size: 6.2em;
       width: 2.7em;
       height: 2.7em;
       h1{
@@ -556,7 +554,6 @@ $default-button-color: #00CCCC;
   .recent-posts{
     [class*='col-']{
       .content .shortened-desc{
-        font-size: 1.4em;
       }
     }
   }
@@ -571,24 +568,44 @@ $default-button-color: #00CCCC;
 
   .slogan{
     h2 > p:nth-child(1) {
-      margin-right: 310px;
+      margin-right: 11.5em;
     }
   }
 }
 
 
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 1024px) and (max-width: 1150px) {
+  .page-title-wrapper .page-title{
+    font-size: 5.8em;
+  }
   .page-title-wrapper .slogan{
     h2{
-      font-size: 1.9em;
+      font-size: 1.8em;
     }
   }
 }
 
-@media (min-width: 1101px){
+@media (min-width: 1151px){
   .page-title-wrapper .slogan{
     h2{
-      font-size: 2.3em;
+      font-size: 2.1em;
     }
+  }
+}
+
+
+/* Filters */
+.filters{
+  @media (max-width: 479px){
+    font-size: 0.75em;
+  }
+  @media (min-width: 480px) and (max-width: 766px) {
+    font-size: 1em;
+  }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    font-size: 1.1em;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.2em;
   }
 }
