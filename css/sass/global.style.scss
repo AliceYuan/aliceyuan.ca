@@ -7,9 +7,9 @@ $back_color_art: #BB99EE; //light purple
 $back_color_projects: #EE8855;//orange
 $back_color_blog: #669955; //light green
 $dark_text: #443B35;
-$color2: #997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color2: #AF7F7F;//#997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color3: #8DB356;//#AF7F7F;//#AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
 $color2-hover: #645656;
-$color3: #9C6C6C;//#AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
 
 
 $hover-button-size-small: 31px;
@@ -430,16 +430,24 @@ a:visited{
   }
   li .label{
   }
-  a{
+  button{
     color: white;
+    cursor: pointer;
     text-align: center;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size:   inherit;
+    text-shadow: inherit;
+    padding: 0;
+    margin: 0;
   }
-  a:hover, a:focus{
+  button:hover, button:focus{
     font-weight: bold;
   }
-  a:hover span, a:focus span{
+  button:hover span, button:focus span{
   }
-  a span{
+  button span{
     display: block;
     width: 3.5em;
     height: 3.5em;

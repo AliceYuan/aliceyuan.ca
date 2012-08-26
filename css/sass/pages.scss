@@ -2,13 +2,9 @@
 $back_color: transparent;
 $overview_border_radius: 6px;
 $back_pink: #EDBBCF; //EDBBBB
-$back_color_front: #94CDCB; //light blue
-$back_color_art: #BB99EE; //light purple
-$back_color_projects: #EE8855;//orange
-$back_color_blog: #669955; //light green
 $dark_text: #443B35;
-$color2: #997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
-$color3: #AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color2: #AF7F7F;//#997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color3: #8DB356;//#AF7F7F;//#AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
 $color2-hover: #645656;
 
 
@@ -27,10 +23,6 @@ $default-button-color: #00CCCC;
  *  This file is for page specific styling
  * ==========================================================================*/
 
-/* ==========================================================================
- *  Blog Page
- * ==========================================================================*/
-
 
 .main.index .page-title-wrapper .page-title h1 {
   font-size: 1.00em;
@@ -46,12 +38,86 @@ $default-button-color: #00CCCC;
   margin-left: -3%;
 }
 
+/* ==========================================================================
+ *  About Page
+ * ==========================================================================*/
+
+.main.about .page-content{
+  margin: 5em 5% 20em;
+}
+
+.main.about .page-content{
+  .about-me{
+    font-weight: bold;
+    text-shadow: 0 1px rgba(100, 100, 100, 0.3);
+    a{
+      color: inherit;
+      border-bottom: 1px dashed white;
+      @include transition(all, .5s);
+    }
+    a:hover, a:focus{
+      color: rgba(255,255,255,0.8);
+    }
+    .google{
+      // .char2{ color: blue}//G
+      // .char3{ color: red}//o
+      // .char4{ color: yellow}//o
+      // .char5{ color: blue}//g
+      // .char6{ color: green}//l
+      // .char7{ color: red}//e
+    }
+    .mpd{
+    }
+    .hello{
+      font-size: 2em;
+    }
+    .ss-mail{
+      margin-right: .2em;
+    }
+  }
+}
+/* ==========================================================================
+ *  About Page Responsive
+ * ==========================================================================*/
+
+@media (max-width: 479px){
+  .main.about .page-content{
+    .about-me{
+      font-size: 1em;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 766px) {
+  .main.about .page-content{
+    .about-me{
+      font-size: 1.25em;
+    }
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .main.about .page-content{
+    .about-me{
+      font-size: 1.25em;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .main.about .page-content{
+    .about-me{
+      font-size: 1.4em;
+    }
+  }
+}
+/* ==========================================================================
+ *  Blog Page
+ * ==========================================================================*/
+
 /* =========================================================================
  * Blog Page Responsive
  * ==========================================================================*/
 @media (max-width: 479px){
   .timeline{
-    font-size: 0.8em;
     margin-left: 0;
     border-left: none;
     .date{
@@ -80,7 +146,6 @@ $default-button-color: #00CCCC;
 }
 @media (min-width: 480px) and (max-width: 766px) {
   .timeline{
-    font-size: 0.9em;
     margin-left: 0;
     border-left: none;
     .date{
@@ -106,6 +171,9 @@ $default-button-color: #00CCCC;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   .timeline{
+    p{
+      line-height: 1.75em;
+    }
     margin-left: 10%;
     border-left: 3px solid white;
     @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
@@ -123,6 +191,9 @@ $default-button-color: #00CCCC;
 }
 @media (min-width: 1024px) {
   .timeline{
+    p{
+      line-height: 1.75em;
+    }
     margin-left: 10%;
     border-left: 3px solid white;
     @include box-shadow(-2px 0px 0px rgba(100, 100, 100, 0.15));
@@ -152,9 +223,6 @@ $default-button-color: #00CCCC;
     @include transition(all .5s);
   }
   .blog-posts{
-    p{
-      font-size: 1.25em;
-    }
     min-height: 500px;
     // width: 90%;
     color: $dark_text;
@@ -257,7 +325,7 @@ $default-button-color: #00CCCC;
   }
   .category a{
     color: white;
-    padding: .2em 2em .2em 4em;
+    padding: .2em 2em .3em 4em;
     background: $color3;
     // border-bottom: green .2em solid;
     display: block;

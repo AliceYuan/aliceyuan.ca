@@ -52,7 +52,6 @@
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/plugin/bootstrap/js/bootstrap.min.js" ></script>
 
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.transit.js" ></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.fittext.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/font/ss-social/ss-social.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/global.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/plugin/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -98,7 +97,7 @@
           array('label'=>'About', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/book_alt2_32x28.png', 'url'=>array('site/page', 'view'=>'about')),
           array('label'=>'Blog', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/notepencil32.png','url'=>array('site/page', 'view'=>'blog')),
           array('label'=>'Artworks', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/brush_32x32.png','url'=>array('site/page', 'view'=>'artworks')),
-          array('label'=>'Resume', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/article_32x32.png','url'=>array('site/page'), 'view'=>'resume'),
+          array('label'=>'Resume', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/article_32x32.png','url'=>array('site/page', 'view'=>'resume')),
           array('label'=>'Contact', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/chat_alt_fill_32x32.png','url'=>array('site/contact'), 'itemOptions'=>array('class'=>'fancybox')),
         ),
         'linkLabelWrapper'=>'p',

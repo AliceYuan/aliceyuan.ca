@@ -1,99 +1,159 @@
 /* ==========================================================================
  *  This file is for page specific styling
  * ==========================================================================*/
-/* ==========================================================================
- *  Blog Page
- * ==========================================================================*/
-/* line 35, ../sass/pages.scss */
+/* line 27, ../sass/pages.scss */
 .main.index .page-title-wrapper .page-title h1 {
   font-size: 1.00em;
   margin-top: 26%;
 }
 
-/* line 39, ../sass/pages.scss */
+/* line 31, ../sass/pages.scss */
 .main.blog .page-title-wrapper .page-title h1 {
   font-size: 1.17em;
   margin-top: 30%;
 }
 
-/* line 43, ../sass/pages.scss */
+/* line 35, ../sass/pages.scss */
 .main.about .page-title-wrapper .page-title h1 {
   font-size: 1.10em;
   margin-top: 40%;
   margin-left: -3%;
 }
 
+/* ==========================================================================
+ *  About Page
+ * ==========================================================================*/
+/* line 45, ../sass/pages.scss */
+.main.about .page-content {
+  margin: 5em 5% 20em;
+}
+
+/* line 50, ../sass/pages.scss */
+.main.about .page-content .about-me {
+  font-weight: bold;
+  text-shadow: 0 1px rgba(100, 100, 100, 0.3);
+}
+/* line 53, ../sass/pages.scss */
+.main.about .page-content .about-me a {
+  color: inherit;
+  border-bottom: 1px dashed white;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+/* line 58, ../sass/pages.scss */
+.main.about .page-content .about-me a:hover, .main.about .page-content .about-me a:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 71, ../sass/pages.scss */
+.main.about .page-content .about-me .hello {
+  font-size: 2em;
+}
+/* line 74, ../sass/pages.scss */
+.main.about .page-content .about-me .ss-mail {
+  margin-right: .2em;
+}
+
+/* ==========================================================================
+ *  About Page Responsive
+ * ==========================================================================*/
+@media (max-width: 479px) {
+  /* line 85, ../sass/pages.scss */
+  .main.about .page-content .about-me {
+    font-size: 1em;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  /* line 93, ../sass/pages.scss */
+  .main.about .page-content .about-me {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 100, ../sass/pages.scss */
+  .main.about .page-content .about-me {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 107, ../sass/pages.scss */
+  .main.about .page-content .about-me {
+    font-size: 1.4em;
+  }
+}
+/* ==========================================================================
+ *  Blog Page
+ * ==========================================================================*/
 /* =========================================================================
  * Blog Page Responsive
  * ==========================================================================*/
 @media (max-width: 479px) {
-  /* line 53, ../sass/pages.scss */
+  /* line 120, ../sass/pages.scss */
   .timeline {
-    font-size: 0.8em;
     margin-left: 0;
     border-left: none;
   }
-  /* line 57, ../sass/pages.scss */
+  /* line 123, ../sass/pages.scss */
   .timeline .date {
     top: -3em;
     left: 0;
     width: 100%;
   }
-  /* line 61, ../sass/pages.scss */
+  /* line 127, ../sass/pages.scss */
   .timeline .date p {
     text-align: center;
   }
-  /* line 66, ../sass/pages.scss */
+  /* line 132, ../sass/pages.scss */
   .timeline .date .D {
     font-size: 1em;
   }
-  /* line 70, ../sass/pages.scss */
+  /* line 136, ../sass/pages.scss */
   .timeline div[id*='post-'] {
     margin-top: 3em;
   }
-  /* line 72, ../sass/pages.scss */
+  /* line 138, ../sass/pages.scss */
   .timeline div[id*='post-'] .post-indicator {
     display: none;
   }
 
-  /* line 77, ../sass/pages.scss */
+  /* line 143, ../sass/pages.scss */
   .blog-posts {
     margin: 0 1em;
   }
 }
 @media (min-width: 480px) and (max-width: 766px) {
-  /* line 82, ../sass/pages.scss */
+  /* line 148, ../sass/pages.scss */
   .timeline {
-    font-size: 0.9em;
     margin-left: 0;
     border-left: none;
   }
-  /* line 86, ../sass/pages.scss */
+  /* line 151, ../sass/pages.scss */
   .timeline .date {
     top: -3em;
     left: 0;
     width: 100%;
   }
-  /* line 90, ../sass/pages.scss */
+  /* line 155, ../sass/pages.scss */
   .timeline .date p {
     text-align: center;
   }
-  /* line 96, ../sass/pages.scss */
+  /* line 161, ../sass/pages.scss */
   .timeline div[id*='post-'] {
     margin-top: 3em;
   }
-  /* line 98, ../sass/pages.scss */
+  /* line 163, ../sass/pages.scss */
   .timeline div[id*='post-'] .post-indicator {
     display: none;
   }
 
-  /* line 103, ../sass/pages.scss */
+  /* line 168, ../sass/pages.scss */
   .blog-posts {
     margin: 0 1.5em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  /* line 108, ../sass/pages.scss */
+  /* line 173, ../sass/pages.scss */
   .timeline {
     margin-left: 10%;
     border-left: 3px solid white;
@@ -101,23 +161,27 @@
     -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
     box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
   }
-  /* line 112, ../sass/pages.scss */
+  /* line 174, ../sass/pages.scss */
+  .timeline p {
+    line-height: 1.75em;
+  }
+  /* line 180, ../sass/pages.scss */
   .timeline .date {
     left: -7.5em;
     top: 32px;
   }
-  /* line 115, ../sass/pages.scss */
+  /* line 183, ../sass/pages.scss */
   .timeline .date span {
     display: block;
   }
 
-  /* line 120, ../sass/pages.scss */
+  /* line 188, ../sass/pages.scss */
   .blog-posts {
     margin: 0 3em;
   }
 }
 @media (min-width: 1024px) {
-  /* line 125, ../sass/pages.scss */
+  /* line 193, ../sass/pages.scss */
   .timeline {
     margin-left: 10%;
     border-left: 3px solid white;
@@ -125,17 +189,21 @@
     -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
     box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
   }
-  /* line 129, ../sass/pages.scss */
+  /* line 194, ../sass/pages.scss */
+  .timeline p {
+    line-height: 1.75em;
+  }
+  /* line 200, ../sass/pages.scss */
   .timeline .date {
     left: -7.5em;
     top: 32px;
   }
-  /* line 132, ../sass/pages.scss */
+  /* line 203, ../sass/pages.scss */
   .timeline .date span {
     display: block;
   }
 
-  /* line 137, ../sass/pages.scss */
+  /* line 208, ../sass/pages.scss */
   .blog-posts {
     margin: 0 3em;
   }
@@ -143,11 +211,11 @@
 /* =========================================================================
  * Blog Page Content Styling
  * ==========================================================================*/
-/* line 144, ../sass/pages.scss */
+/* line 215, ../sass/pages.scss */
 .main.blog .page-content {
   margin-top: 10em;
 }
-/* line 146, ../sass/pages.scss */
+/* line 217, ../sass/pages.scss */
 .main.blog .page-content img {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
@@ -156,7 +224,7 @@
   border-radius: 1em;
   margin: 0 auto 2em;
 }
-/* line 150, ../sass/pages.scss */
+/* line 221, ../sass/pages.scss */
 .main.blog .page-content .timeline {
   height: 100%;
   -webkit-transition: all 0.5s;
@@ -164,37 +232,33 @@
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 154, ../sass/pages.scss */
+/* line 225, ../sass/pages.scss */
 .main.blog .page-content .blog-posts {
   min-height: 500px;
   color: #443b35;
 }
-/* line 155, ../sass/pages.scss */
-.main.blog .page-content .blog-posts p {
-  font-size: 1.25em;
-}
-/* line 161, ../sass/pages.scss */
+/* line 229, ../sass/pages.scss */
 .main.blog .page-content .blog-posts .content {
   padding: 2em;
   position: relative;
 }
-/* line 164, ../sass/pages.scss */
+/* line 232, ../sass/pages.scss */
 .main.blog .page-content .blog-posts .content .tag {
   position: absolute;
   right: 0;
   top: 0;
   height: 25px;
   max-width: 50px;
-  background: #af6868;
+  background: #8db356;
 }
-/* line 173, ../sass/pages.scss */
+/* line 241, ../sass/pages.scss */
 .main.blog .page-content .blog-posts h2 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 1em;
   margin-top: 1em;
 }
-/* line 180, ../sass/pages.scss */
+/* line 248, ../sass/pages.scss */
 .main.blog .page-content div[id*='post-'] {
   background: white;
   margin-bottom: 100px;
@@ -208,7 +272,7 @@
   -moz-box-shadow: -3px 3px 10px rgba(50, 50, 51, 0.5);
   box-shadow: -3px 3px 10px rgba(50, 50, 51, 0.5);
 }
-/* line 189, ../sass/pages.scss */
+/* line 257, ../sass/pages.scss */
 .main.blog .page-content .post-indicator {
   width: 10px;
   height: 10px;
@@ -226,7 +290,7 @@
   -moz-box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
   box-shadow: -2px 0px 0px rgba(100, 100, 100, 0.15);
 }
-/* line 199, ../sass/pages.scss */
+/* line 267, ../sass/pages.scss */
 .main.blog .page-content .post-indicator .point {
   position: absolute;
   top: -20px;
@@ -235,40 +299,40 @@
   border-bottom: 25px solid transparent;
   border-right: 20px solid white;
 }
-/* line 208, ../sass/pages.scss */
+/* line 276, ../sass/pages.scss */
 .main.blog .page-content .date {
   text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
   position: absolute;
   color: white;
   font-weight: bold;
 }
-/* line 213, ../sass/pages.scss */
+/* line 281, ../sass/pages.scss */
 .main.blog .page-content .date span {
   text-align: center;
 }
-/* line 216, ../sass/pages.scss */
+/* line 284, ../sass/pages.scss */
 .main.blog .page-content .date .M {
   font-size: 1.5em;
 }
-/* line 217, ../sass/pages.scss */
+/* line 285, ../sass/pages.scss */
 .main.blog .page-content .date .D {
   font-size: 2.5em;
   margin: 0.2em 0;
 }
-/* line 220, ../sass/pages.scss */
+/* line 288, ../sass/pages.scss */
 .main.blog .page-content .links {
   clear: both;
   width: 100%;
 }
-/* line 223, ../sass/pages.scss */
+/* line 291, ../sass/pages.scss */
 .main.blog .page-content .links .share, .main.blog .page-content .links .comment {
   float: left;
 }
-/* line 226, ../sass/pages.scss */
+/* line 294, ../sass/pages.scss */
 .main.blog .page-content .links .share .ss-icon {
   font-size: 2em;
 }
-/* line 230, ../sass/pages.scss */
+/* line 298, ../sass/pages.scss */
 .main.blog .page-content .category {
   position: absolute;
   right: 0;
@@ -276,7 +340,7 @@
   z-index: 3;
   text-shadow: -1px -1px rgba(49, 49, 49, 0.5);
 }
-/* line 236, ../sass/pages.scss */
+/* line 304, ../sass/pages.scss */
 .main.blog .page-content .category .pointer {
   position: absolute;
   left: 0.1em;
@@ -287,7 +351,7 @@
   border-bottom: 1.1em solid transparent;
   border-left: 1em solid rgba(0, 0, 0, 0.4);
 }
-/* line 246, ../sass/pages.scss */
+/* line 314, ../sass/pages.scss */
 .main.blog .page-content .category .pointer::after {
   content: '';
   position: absolute;
@@ -299,14 +363,14 @@
   border-bottom: 1.1em solid transparent;
   border-left: 1em solid white;
 }
-/* line 258, ../sass/pages.scss */
+/* line 326, ../sass/pages.scss */
 .main.blog .page-content .category a {
   color: white;
-  padding: .2em 2em .2em 4em;
-  background: #af6868;
+  padding: .2em 2em .3em 4em;
+  background: #8db356;
   display: block;
 }
-/* line 264, ../sass/pages.scss */
+/* line 332, ../sass/pages.scss */
 .main.blog .page-content .category a span {
   width: 2em;
   height: 2em;
@@ -316,7 +380,7 @@
   left: 1.5em;
   background: url("../../img/icons_sprite.png") -345px -64px;
 }
-/* line 273, ../sass/pages.scss */
+/* line 341, ../sass/pages.scss */
 .main.blog .page-content .category a p {
   font-weight: bold;
   text-transform: uppercase;

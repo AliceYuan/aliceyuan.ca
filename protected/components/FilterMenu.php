@@ -51,7 +51,7 @@ class FilterMenu extends CMenu{
             $template=isset($item['template']) ? $item['template'] : $this->itemTemplate;
             $template_str = strtr($template,array('{menu}'=>$menu,));
             if (isset($item['url'])){
-              echo CHtml::link($template_str, $item['url'], isset($item['linkOptions']) ? $item['linkOptions'] : array());
+              echo CHtml::link($template_str, '#', isset($item['linkOptions']) ? $item['linkOptions'] : array());
             }else{
               echo $template_str;
             }

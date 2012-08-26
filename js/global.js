@@ -2,9 +2,7 @@ $(document).ready(function(){
   var default_button_size = '30px';
   var hover_button_size = '40px';
   resize();
-  $('.scrollTop a').click(function(){
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-  });
+  filter('.blog-posts','.filters');
   $(window).resize(function() {
     resize();
   });
@@ -31,6 +29,7 @@ function resizeText(){
 
 // Resizes Page Title
 function resizeTitle(){
+  $('.main .slogan p').removeAttr('style');
   var $title = $('.main .page-title');
   var titleW = $title.width();
   var $slogan = $('.main .slogan');
@@ -77,7 +76,36 @@ function frontPage(){
   if ($('body').hasClass('front')){
   }
 }
+// =============================================================
+// Filter Function
+// =============================================================
 
+function filter(tofilter, filtersDiv){
+  //get label of each filter
+  var $tofilter = $(tofilter);
+  var $filtersDiv = $(filtersDiv);
+  var label;
+  var delay = 200;
+  console.log($tofilter, $filtersDiv);
+  $filtersDiv.find('button').click(function(){
+    label = $(this).find('p').text();
+    console.log(label);
+    if (label == 'all'){
+      $tofilter.children().each(function(i){
+        $(this).delay(i*delay).slideDown(1000);
+      });
+    }else{
+      $tofilter.children().each(function(i){
+        if ($(this).hasClass(label)){
+          $(this).delay(i*delay).slideDown(1000);
+        }else{
+          $(this).delay(i*delay).slideUp(500);
+        }
+        console.log($(this));
+      });
+    }
+  });
+}
 
 // =============================================================
 // Reuseable Functions
@@ -110,7 +138,6 @@ function centerHorizontal($object, $parentObject){
 //function makes all objects the same height
 function equalHeight($object){
   var maxHeight = 0;
-  var index;
   $object.removeAttr('style');
   $object.each(function(index){
     var currentHeight = $(this).height();
