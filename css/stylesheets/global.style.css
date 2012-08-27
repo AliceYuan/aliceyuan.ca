@@ -363,11 +363,7 @@ a:visited {
   margin-bottom: 0.5em;
   margin-right: 2em;
 }
-/* line 314, ../sass/global.style.scss */
-.recent-posts p {
-  font-size: 1.2em;
-}
-/* line 317, ../sass/global.style.scss */
+/* line 316, ../sass/global.style.scss */
 .recent-posts [class*='post-'] {
   width: 100%;
   overflow: hidden;
@@ -376,11 +372,11 @@ a:visited {
   border-right: 1px solid #F0F0E5;
   position: relative;
 }
-/* line 324, ../sass/global.style.scss */
+/* line 323, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .content {
   padding: 6%;
 }
-/* line 327, ../sass/global.style.scss */
+/* line 326, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date {
   position: absolute;
   top: 0;
@@ -402,21 +398,21 @@ a:visited {
   color: #443b35;
   font-weight: bold;
 }
-/* line 341, ../sass/global.style.scss */
+/* line 340, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date span {
   display: block;
   text-align: center;
 }
-/* line 345, ../sass/global.style.scss */
+/* line 344, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date .M {
   font-size: 1.5em;
 }
-/* line 346, ../sass/global.style.scss */
+/* line 345, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date .D {
   font-size: 2.5em;
   margin: 0.2em 0;
 }
-/* line 349, ../sass/global.style.scss */
+/* line 348, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .content img {
   max-height: 9em;
   margin: 0.4em;
@@ -426,18 +422,18 @@ a:visited {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 356, ../sass/global.style.scss */
+/* line 355, ../sass/global.style.scss */
 .recent-posts [class*='col-'] {
   width: 49.5%;
   float: left;
   min-height: 5em;
   border-bottom: 1px solid #F0F0E5;
 }
-/* line 362, ../sass/global.style.scss */
+/* line 361, ../sass/global.style.scss */
 .recent-posts .col-1 {
   border-left: 1px solid #F0F0E5;
 }
-/* line 367, ../sass/global.style.scss */
+/* line 366, ../sass/global.style.scss */
 .recent-posts .slide {
   margin: auto;
   -webkit-border-radius: 50%;
@@ -452,12 +448,12 @@ a:visited {
   background: #DDEEEE;
   position: relative;
 }
-/* line 377, ../sass/global.style.scss */
+/* line 376, ../sass/global.style.scss */
 .recent-posts .slide a h4 {
   font-size: 2em;
   margin: 20% 3%;
 }
-/* line 381, ../sass/global.style.scss */
+/* line 380, ../sass/global.style.scss */
 .recent-posts .slide a .mask {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -471,11 +467,11 @@ a:visited {
   width: 100%;
 }
 
-/* line 394, ../sass/global.style.scss */
+/* line 393, ../sass/global.style.scss */
 .content-wrapper {
   margin: 10px;
 }
-/* line 397, ../sass/global.style.scss */
+/* line 396, ../sass/global.style.scss */
 .content-wrapper #content {
   height: 300px;
   background: white;
@@ -485,13 +481,13 @@ a:visited {
 /* ==================================================================================
  *      Global Contact Lightbox Styling
  * ==================================================================================*/
-/* line 408, ../sass/global.style.scss */
+/* line 407, ../sass/global.style.scss */
 #contact {
   max-width: 900px;
   display: none;
 }
 
-/* line 413, ../sass/global.style.scss */
+/* line 412, ../sass/global.style.scss */
 .contact-main {
   max-width: 90%;
   padding: 5% 0;
@@ -501,24 +497,23 @@ a:visited {
 /* ==================================================================================
  *      Filter Buttons
  * ==================================================================================*/
-/* line 422, ../sass/global.style.scss */
+/* line 421, ../sass/global.style.scss */
 .filters {
   text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
   clear: both;
   color: white;
   font-size: 1.25em;
-  margin-bottom: 10em;
 }
-/* line 428, ../sass/global.style.scss */
+/* line 426, ../sass/global.style.scss */
 .filters h3 {
   text-align: center;
 }
-/* line 431, ../sass/global.style.scss */
+/* line 429, ../sass/global.style.scss */
 .filters li {
   float: left;
   margin: 0 1em;
 }
-/* line 437, ../sass/global.style.scss */
+/* line 435, ../sass/global.style.scss */
 .filters button {
   color: white;
   cursor: pointer;
@@ -531,11 +526,11 @@ a:visited {
   padding: 0;
   margin: 0;
 }
-/* line 449, ../sass/global.style.scss */
+/* line 447, ../sass/global.style.scss */
 .filters button:hover, .filters button:focus {
   font-weight: bold;
 }
-/* line 454, ../sass/global.style.scss */
+/* line 452, ../sass/global.style.scss */
 .filters button span {
   display: block;
   width: 3.5em;
@@ -554,13 +549,13 @@ a:visited {
   border-radius: 50%;
   behavior: url(PIE.htc);
 }
-/* line 465, ../sass/global.style.scss */
+/* line 463, ../sass/global.style.scss */
 .filters .categories {
   margin-left: 28%;
   clear: both;
 }
 
-/* line 471, ../sass/global.style.scss */
+/* line 469, ../sass/global.style.scss */
 .filters.fixed {
   position: fixed;
   top: 0;
@@ -568,7 +563,7 @@ a:visited {
   z-index: 10;
   font-size: 0.5em;
 }
-/* line 477, ../sass/global.style.scss */
+/* line 475, ../sass/global.style.scss */
 .filters.fixed li {
   float: none;
 }
