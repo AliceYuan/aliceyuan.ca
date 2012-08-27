@@ -85,23 +85,23 @@ function filter(tofilter, filtersDiv){
   var $tofilter = $(tofilter);
   var $filtersDiv = $(filtersDiv);
   var label;
-  var delay = 200;
-  console.log($tofilter, $filtersDiv);
+  var delay = 100;
+  var slideDownTime = 700;
+  var slideUpTime = 500;
   $filtersDiv.find('button').click(function(){
     label = $(this).find('p').text();
     console.log(label);
     if (label == 'all'){
-      $tofilter.children().each(function(i){
-        $(this).delay(i*delay).slideDown(1000);
+      $tofilter.find('[id*="post-"]').each(function(i){
+        $(this).delay(i*delay).slideDown(slideDownTime);
       });
     }else{
-      $tofilter.children().each(function(i){
+      $tofilter.find('[id*="post-"]').each(function(i){
         if ($(this).hasClass(label)){
-          $(this).delay(i*delay).slideDown(1000);
+          $(this).delay(i*delay).slideDown(slideDownTime);
         }else{
-          $(this).delay(i*delay).slideUp(500);
+          $(this).delay(i*delay).slideUp(slideUpTime);
         }
-        console.log($(this));
       });
     }
   });
