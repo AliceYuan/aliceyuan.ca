@@ -1,6 +1,17 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - Blog';
 ?>
+
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/waypoints.min.js" ></script>
+<script>
+  $(document).ready(function() {
+    // $('.filters').waypoint(function(event, direction) {
+    //   $('.filters').toggleClass('fixed', direction === "down");
+    // });
+  });
+</script>
+
+
 <div class="main blog">
   <div class="page-title-wrapper blog">
     <a href="/" >
@@ -40,6 +51,7 @@ $this->pageTitle=Yii::app()->name . ' - Blog';
           ',
       )); ?>
   </div>
+
 
 
 

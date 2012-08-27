@@ -2,15 +2,11 @@
 $this->pageTitle=Yii::app()->name . ' - About';
 ?>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.lettering.js" ></script>
-<script>
-  $(document).ready(function() {
-  });
-</script>
 <div class="main about">
   <div class="page-title-wrapper small">
     <a href="/" >
       <div class="page-title clearfix small">
-          <h1>
+        <h1>
             <span class="about"> About </span>
           </h1>
       </div>

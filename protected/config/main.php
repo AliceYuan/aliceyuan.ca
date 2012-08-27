@@ -45,8 +45,12 @@ return array(
       'caseSensitive'=>false,
       'matchValue'=>false,
       'rules' => array(
-        '<view:(about|blog|artworks|resume)>' => 'site/page',
-        '/' => 'site/',
+        '<view:(about|artworks|resume)>' => 'site/page',
+        'blog' => 'post/index',
+        'contact' => 'site/contact',
+				'blog/<id:\d+>/<title:.*?>'=>'post/view',
+				'blog/<tag:.*?>'=>'post/index',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
         // '/' => '/site/page/view',
 //          '<controller:\w+>/<id:\d+>' => '<controller>/view',
 //          '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
@@ -57,15 +61,14 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
 		// uncomment the following to use a MySQL database
-		/*
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=aliceyuan',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'alice',
+			'password' => 'alicedb',
 			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
 		),
-		*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -90,9 +93,6 @@ return array(
 	),
 
 	// application-level parameters that can be accessed
-	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'yuan.alice93@gmail.com',
-	),
+  //
+	'params'=>require(dirname(__FILE__).'/params.php'),
 );

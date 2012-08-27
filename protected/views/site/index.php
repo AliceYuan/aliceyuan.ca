@@ -29,66 +29,13 @@
       <h1 class="recent-title">
         Recent Posts
       </h1>
-      <ul class="col-1">
-        <li class="post-1">
-          <a href="#">
-            <div class="date">
-              <p> <span class="M">Aug</span>
-              <span class="D">24 </span>
-              </p>
-            </div>
-            <div class="content">
-              <h2 class="title"> this is a post </h2>
-              <p class="shortened-desc"> this is a description this is a descriptionthis is a description this is a description  this is a description this is a description </p>
-            </div>
-          </a>
-        </li> <!-- end post -->
 
-        <li class="post-1">
-          <a href="#">
-            <div class="date">
-              <p> <span class="M">June</span>
-              <span class="D">12 </span>
-              </p>
-            </div>
-            <div class="content">
-              <h2 class="title"> this is a post </h2>
-              <p class="shortened-desc"> this is a description this is a descriptionthis is a description this is a description  this is a description this is a description </p>
-            </div>
-          </a>
-        </li> <!-- end post -->
-      </ul><!--end col-1-->
-
-      <ul class="col-2">
-        <li class="post-1">
-          <a href="#">
-            <div class="date">
-              <p> <span class="M">May</span>
-              <span class="D">17 </span>
-              </p>
-            </div>
-            <div class="content">
-              <h2 class="title"> this is a post </h2>
-              <img src="img/stock.jpg"/>
-            </div>
-          </a>
-        </li> <!-- end post -->
-
-        <li class="post-1">
-          <a href="#">
-            <div class="date">
-              <p> <span class="M">May</span>
-              <span class="D">07 </span>
-              </p>
-            </div>
-            <div class="content">
-              <h2 class="title"> this is a post </h2>
-              <p class="shortened-desc"> this is a description this is a descriptionthis is a description this is a description  this is a description this is a description </p>
-            </div>
-          </a>
-        </li> <!-- end post -->
-      </ul><!-- end col-2 -->
-
+        <?php $this->widget('zii.widgets.CListView', array(
+          'dataProvider'=>$dataProvider,
+          'itemView'=>'_recent',
+          'template'=>"{items}\n{pager}",
+        )); ?>
     </div> <!-- recent-posts end -->
+
   </div><!-- page-content end -->
 </div><!-- main end -->
