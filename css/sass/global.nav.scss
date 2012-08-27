@@ -1,21 +1,19 @@
 //SASS Variables
-$back_color: transparent;
 $overview_border_radius: 6px;
-$back_pink: #EDBBCF; //EDBBBB
-$back_color_front: #94CDCB; //light blue
-$back_color_art: #BB99EE; //light purple
-$back_color_projects: #EE8855;//orange
-$back_color_blog: #669955; //light green
-$dark_text: #443B35;
-$color2: #997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
-$color2-hover: #645656;
-
+$back_color: #98C5BC;
+$footer_color: #98C5BC;//#8ABFB4;//#94CDCB; //light blue
+$color2: #C29B8D;
+$color2-hover: #AD958C;//#AA897D;//#A57463;//#645656;
+$color3: #8DB356;//#AF7F7F;//#AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
+$color4: #BCD496;
+$color5: #dbd19e;
 
 $hover-button-size-small: 31px;
 $default-button-size-small: 25px;
 $hover-button-size: 45px;
 $default-button-size: 35px;
-$default-button-color: #00CCCC;
+$button-color: #61B3AF;
+$button-color-border: #6F7D81;
 //SASS Import
 @import "compass";
 
@@ -69,7 +67,7 @@ $default-button-color: #00CCCC;
     position: relative;
     //pseudoclasses
     p{
-      color: grey;
+      color: $button-color-border;
       position: absolute;
       background: transparent;
       height: 2em;
@@ -84,9 +82,9 @@ $default-button-color: #00CCCC;
       position: relative;
     }
     .button-inner{
-      background: $default-button-color;
+      background: $button-color;
       margin:     0 7px;
-      border:     3px solid grey;
+      border:     3px solid $button-color-border;
       position:   absolute;
       z-index:    10;
       height:     $default-button-size;
@@ -144,13 +142,14 @@ $default-button-color: #00CCCC;
 .footer{
   min-width: 100%;
   text-align: center;
-  background: #368AA2;
+  background: $footer_color;
   min-height: 4em;
   padding:    1em 0;
   position:   absolute;
   bottom:     0;
   p{
     vertical-align: bottom;
+    margin-bottom: .5em;
   }
   ul{
     margin: 0 auto;
@@ -158,7 +157,7 @@ $default-button-color: #00CCCC;
   }
   li{
     float: left;
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
     a{
       color: white;
       &:hover, &:focus{

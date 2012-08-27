@@ -22,8 +22,6 @@ $default-button-color: #00CCCC;
 /* ==========================================================================
  *  This file is for page specific styling
  * ==========================================================================*/
-
-
 .main.index .page-title-wrapper .page-title h1 {
   font-size: 1.00em;
   margin-top: 26%;
@@ -110,7 +108,92 @@ $default-button-color: #00CCCC;
   }
 }
 /* ==========================================================================
- *  Blog Page
+ *  Blog Page - single page
+ * ==========================================================================*/
+.main.blog-post .page-content{
+}
+
+.main.blog-post .page-content{
+  margin: 5em 5% 20em;
+  h2.title a{
+    color: white;
+    font-weight: bold;
+    margin-left: 0.7em;
+  }
+
+  div[id*='post-']{
+    background: white;
+    color: $dark_text;
+    position: relative;
+    @include border-radius(2em);
+    @include box-shadow(-3px 3px 10px rgba(50, 50, 51, 0.5));
+    padding: 2em 3%;
+  }
+  .content .body{
+  }
+  h2.title{
+    margin-bottom: 1em;
+  }
+  .date{
+  }
+
+  .nav{
+    display: none;
+  }
+  #comments{
+    margin-top: 5em;
+  }
+}
+
+/* ==========================================================================
+ *  Blog Page - single page Responsive
+ * ==========================================================================*/
+
+@media (max-width: 479px){
+  .main.blog-post .page-content{
+    h2{
+      font-size: 2em;
+    }
+    .content{
+      font-size: 1em;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 766px) {
+  .main.blog-post .page-content{
+    h2{
+      font-size: 2.5em;
+    }
+    .content{
+      font-size: 1em;
+    }
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .main.blog-post .page-content{
+    h2{
+      font-size: 2.5em;
+    }
+    .content{
+      font-size: 1.15em;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .main.blog-post .page-content{
+    h2{
+      font-size: 2.5em;
+    }
+    .content{
+      font-size: 1.15em;
+    }
+  }
+}
+
+
+/* ==========================================================================
+ *  Blog Page -Aggregated
  * ==========================================================================*/
 
 /* =========================================================================
@@ -124,14 +207,9 @@ $default-button-color: #00CCCC;
       top: -3em;
       left: 0;
       width: 100%;
-      p{
-        text-align: center;
-      }
-      span{
-      }
-      .D{
-        font-size: 1em;
-      }
+      p{ text-align: center; }
+      span{ }
+      .D{ font-size: 1em; }
     }
     div[id*='post-']{
       margin-top: 3em;
@@ -152,11 +230,8 @@ $default-button-color: #00CCCC;
       top: -3em;
       left: 0;
       width: 100%;
-      p{
-        text-align: center;
-      }
-      span{
-      }
+      p{ text-align: center; }
+      span{ }
     }
     div[id*='post-']{
       margin-top: 3em;
@@ -180,9 +255,7 @@ $default-button-color: #00CCCC;
     .date{
       left: -7.5em;
       top:  32px;
-      span{
-        display: block;
-      }
+      span{ display: block; }
     }
   }
   .blog-posts{
@@ -200,9 +273,7 @@ $default-button-color: #00CCCC;
     .date{
       left: -7.5em;
       top:  32px;
-      span{
-        display: block;
-      }
+      span{ display: block; }
     }
   }
   .blog-posts{
@@ -213,7 +284,6 @@ $default-button-color: #00CCCC;
  * Blog Page Content Styling
  * ==========================================================================*/
 .main.blog .page-content{
-  margin-top: 10em;
   img{
     @include border-radius(1em);
     margin: 0 auto 2em;

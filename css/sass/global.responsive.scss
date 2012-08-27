@@ -1,19 +1,23 @@
 //SASS Variables
-$back_color: transparent;
 $overview_border_radius: 6px;
-$back_pink: #EDBBCF; //EDBBBB
-$back_color_front: #94CDCB; //light blue
-$back_color_art: #BB99EE; //light purple
-$back_color_projects: #EE8855;//orange
-$back_color_blog: #669955; //light green
-$color2: #9C6C6C;
+$back_color: #98C5BC;
+$footer_color: #98C5BC;//#8ABFB4;//#94CDCB; //light blue
+$dark_text: #443B35;
+$color2: #C29B8D;
+$color2-hover: #AD958C;//#AA897D;//#A57463;//#645656;
+
+$color3: #AAC481;
+$color4: #BCD496;
+$color5: #F7F2D7;
 
 
 $hover-button-size-small: 31px;
 $default-button-size-small: 25px;
 $hover-button-size: 45px;
 $default-button-size: 35px;
-$default-button-color: #00CCCC;
+$button-color: #61B3AF;
+$button-color-border: #6F7D81;
+$back_color: transparent;
 //SASS Import
 @import "compass";
 
