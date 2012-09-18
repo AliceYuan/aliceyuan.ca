@@ -5,19 +5,12 @@ $this->layout = 'blank';
 ?>
 
 
-<head>
-  <title>Alice Yuan's Resume</title>
-
-
-  <meta name="keywords" content="Alice Yuan Resume" >
-
-  <meta name="description" content="Alice Yuan's Resume" >
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
 <style type="text/css">
     /* General Styling */
 		body {
-			max-width: 720px;
+			width: 720px;
       padding: 1em;
 			/* width: 96%; */
       /* padding:2%; */
@@ -298,7 +291,6 @@ $this->layout = 'blank';
 
 
 
-<body lang="EN-US">
   <div class="header">
     <div>
       <div class="title-decoration-wrapper">
@@ -449,4 +441,3 @@ $this->layout = 'blank';
       </div>
     </div> <!-- end col-2 -->
   </div> <!-- end contents -->
-</body>
