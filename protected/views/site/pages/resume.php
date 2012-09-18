@@ -1,466 +1,452 @@
+
 <?php
 $this->pageTitle=Yii::app()->name . ' - Resume';
 $this->layout = 'blank';
 ?>
 
+
+<head>
+  <title>Alice Yuan's Resume</title>
+
+
+  <meta name="keywords" content="Alice Yuan Resume" >
+
+  <meta name="description" content="Alice Yuan's Resume" >
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
 <style type="text/css">
-        <!--
-		
-		/* WHOLE CONTENT ---start*/
+    /* General Styling */
 		body {
-			width: 850px;
-			padding:0px;
+			max-width: 720px;
+      padding: 1em;
+			/* width: 96%; */
+      /* padding:2%; */
 			margin:0px auto;
 			background: #FFFFFF;
-      color: black;
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #333;
 		}
-		.resume
-		{
-			font-family: "Palatino Linotype", Book Antiqua, Palatino, serif;
-            width: 850px;
-			font-size: 16px;
-			padding:0px;
-			margin:0px auto;
-			background: #FFFFFF;
-		}
-		
-		.resume.page {
-				line-height: 150%;
-		}
-		.resume a {
-				margin: 0px;
-				padding: 0px;
-				text-decoration: none
-		}
-		.resume table *{
-				border-spacing:0px;
-				margin: 0px;
-				padding: 0px;
-		}
-		/* WHOLE CONTENT ---end*/
-		
-		
-		
-		
-		/* HEADER CONTENT ---start*/
-		
-        .resume h1 {
-				padding-left:35px;
-				text-transform: uppercase;
-                font-size: 60px;
-				font-weight: 900;
-                text-align:left;
-				line-height: 95%;
-        }
-		.resume h1#Alice {
-			color: #333;
-			margin: 0px;
-			padding: 0px;
-			padding-top:15px;
-			padding-bottom:3px;
-			padding-left: 35px;
-			border-bottom: 3px solid #555;
-			
-		}
-		.resume h1#Yuan{
-				color: #666;
-				padding-left:85px;
-		}
-		
-		.rightcol{
-				vertical-align:bottom;
-                text-align:right;
-                width:75%;
-				line-spacing:110%;
-        }
+    h1{
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: normal;
+    }
+    h2{
+      font-size: 1.35em;
+      margin: 0 0 .5em 0;
+    }
+    h3{
+      margin: 0 0 .5em 0;
+    }
+    h4{
+      margin: 0 0 .5em 0;
+    }
+    h5{
+      margin: 0 0 .5em 0;
+    }
+    h6{
+      margin: 0 0 .5em 0;
+    }
+    a{
+      color: #429696;
+      border-bottom: 1px dashed #BBB;
+      text-decoration: none;
+    }
+    a:hover, a:focus{
+      color: #5A9B9B;
+    }
+    ul{
+      list-style: none;
+      padding-left: 0;
+    }
 
-		.resume h2 {
-                font-size: 18px;
-                color:#333;
-                margin-top: 30px;
-                margin-bottom: 10px;
-                border-bottom: 2px solid #555;
-                text-transform: uppercase;
-        }
-		.resume h3{
-				border-bottom: 3px solid #555;
-		}
-		.indent{
-				margin-left:22px;
-		}
-		
-        .header {
-                border: 0px;
-				margin-bottom: 40px;
-                
-        }
-		
-		
-		/* HEADER CONTENT ---end*/
-		
-		/* BODY CONTENT -start */
-        .resume table{
-                width: 100%;
-				border-spacing:0px;
-        }
-        table.format1{
-                margin-bottom: 5px;
-        }
-        table.format2{
-                margin-bottom: 3px;
-        }
-        ul.cbul{
-				list-style-type: circle;
-                margin-left: 50px;
-                margin-bottom: 10px;
-        }
-        .resume ul,li p{
-				margin:0px;
-				padding: 0px;
-				margin-left: 25px;
-		}
-		.resume ul {
-                margin-left: 20px;
-                margin-bottom: 15px;            
-        }
-        .resume li {
-                margin-left: 25px;
-                padding-top: 4px;
-                padding-left: 10px;
-                margin-bottom: 0px;
-        }
-        .aleft{
-                text-align:left;
-				margin:0px;
-				padding: 0px;
-        }
-        .aright{
-                text-align:right;
-				margin:0px;
-				padding: 0px;
-        }
-		/*.awhite{
-				color:white;
-		}*/
-		
-		.resume i{
-				margin:0px;
-				padding: 0px;
-		}
-		.resume strong{
-				margin:0px;
-				padding: 0px;
-		}
-		/*BODY CONTENT ---end*/
-		
-		/*PRINT RULES*/
-        @media print
-        {
-        .break 
-		{
-			page-break-after:always;
-			
-		}
-		a 
-		{
-			color:#000;
-			text-decoration:none;
-		}
-		body{
-			margin:0px;
-			padding:0px;
-		}
-        }
-        -->
+    /* Layout Styling */
+
+    .col-2{
+      float: left;
+      width: 450px;
+    }
+    /* Misc Styling */
+    .caps-title{
+      text-transform: uppercase;
+    }
+    .no-bullets{
+      list-style: none;
+    }
+    .bullet{
+      list-style: circle;
+      margin-left: 2em;
+    }
+    .date-right{
+      font-weight: bold;
+      font-size: 11px;
+      float: right;
+    }
+    .no-margin{
+      margin: 0;
+    }
+
+    /* Header Styling */
+
+    .header{
+      text-align: center;
+      font-family: 'Open Sans',Copperplate Gothic Light, Century Gothic, sans-serif;
+      /* border-top: 1em solid blue; */
+      position: relative;
+      margin-bottom: 1em;
+    }
+      .header h1{
+        font-size: 2em;
+      }
+      .header h5{
+        font-weight: normal;
+      }
+      .header ul.links:nth-child(1){
+        margin: 0;
+        position: absolute;
+          top: 1.25em;
+          left: 6em;
+      }
+      .header ul.links:nth-child(2){
+        margin: 0;
+        position: absolute;
+          top: 1.25em;
+          right: 2em;
+      }
+      .header .links li{
+        padding: 0 20px;
+        list-style: disc inside url();
+        color: #24C5BF;
+        font-size: 2em;
+        text-align:left;
+      }
+      .header .links li a{
+        text-decoration: none;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      .header .links .label{
+        width: 5em;
+        display: block;
+        float: left;
+        display: none;
+      }
+
+      .title-decoration-wrapper{
+        height: 106px;
+        width:  106px;
+        border: 2px solid #333;
+        border-radius: 50%;
+        margin:  0 auto;
+      }
+      .title-decoration{
+        height: 90px;
+        width:  90px;
+        border: 1px solid #333;
+        border-radius: 50%;
+        margin: 7px;
+      }
+      .title-decoration h1{
+        vertical-align: middle;
+        padding-top: 8px;
+      }
+
+      .sub-header h3:nth-child(1){
+        margin: 0;
+      }
+      .sub-header h3{
+        font-weight: normal;
+        text-align: center;
+      }
+      .sub-header .you{
+        color: #7EA5AF;
+        font-size: 1.3em;
+      }
+
+
+
+
+    /* Col-1 Styling */
+
+    .col-1{
+      width: 200px;
+      height: 100%;
+      margin-right: 25px;
+      margin-left: 10px;
+      float: left;
+    }
+    .col-1 .hint{
+      font-size: .8em;
+      margin-right: 1em;
+    }
+    .skills ul{
+      list-style: none;
+    }
+    .skills{
+      font-size: 12px;
+      clear: both;
+    }
+    .section h4{
+      font-size: 1.1em;
+      width: 95%;
+      border-bottom: 2px solid #568FAF;
+      margin-top: 1em;
+    }
+
+    .section{
+      float: left;
+      width: 95%;
+      margin-bottom: 1em;
+    }
+    .section li{
+      padding: 0.1em 0.3em;
+      float: left;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .section.web li:nth-child(1){ font-size: 1.6em; } /*php*/
+    .section.web li:nth-child(2){ font-size: 1.1em; } /*yii*/
+    .section.web li:nth-child(3){ font-size: 1.5em; } /*python*/
+    .section.web li:nth-child(4){ font-size: 1.0em; }
+    .section.web li:nth-child(5){ font-size: 1.2em; }
+    .section.web li:nth-child(6){ font-size: 1.3em; }
+    .section.web li:nth-child(7){ font-size: 1.7em; }
+    .section.web li:nth-child(8){ font-size: 1.9em; }
+    .section.web li:nth-child(9){ font-size: 1.4em; }
+    .section.web li:nth-child(10){ font-size: 1.5em; }
+    .section.web li:nth-child(11){ font-size: 1.2em; }
+    .section.web li:nth-child(12){ font-size: 1.1em; }
+
+
+    .section.applications li:nth-child(1){ font-size: 1.5em; } /*C*/
+    .section.applications li:nth-child(2){ font-size: 1.7em; } /*C*/
+    .section.applications li:nth-child(3){ font-size: 1.2em; } /*C*/
+    .section.applications li:nth-child(4){ font-size: 1.2em; } /*C*/
+
+
+    .section.tools li:nth-child(1){ font-size: 1.6em; } /*C*/
+    .section.tools li:nth-child(2){ font-size: 1.2em; } /*C*/
+    .section.tools li:nth-child(3){ font-size: 1.3em; } /*C*/
+    .section.tools li:nth-child(4){ font-size: 1.8em; } /*C*/
+    .section.tools li:nth-child(5){ font-size: 1.4em; } /*C*/
+    .section.tools li:nth-child(6){ font-size: 1.1em; } /*C*/
+
+
+    .section.soft-skills li:nth-child(1){ font-size: 1.2em; } /*C*/
+    .section.soft-skills li:nth-child(2){ font-size: 1.2em; } /*C*/
+    .section.soft-skills li:nth-child(3){ font-size: 1.2em; } /*C*/
+    .section.soft-skills li:nth-child(4){ font-size: 1.2em; } /*C*/
+    .section.soft-skills li:nth-child(5){ font-size: 1.2em; } /*C*/
+    .section.soft-skills li:nth-child(5){ font-size: 1.2em; } /*C*/
+
+    .contents h3{
+      color: brown;
+    }
+    .experience h4{
+      margin-top: 1em;
+    }
+    .contents h2{
+      font-family: 'Open Sans',Copperplate Gothic Light, Century Gothic, sans-serif;
+      font-weight: 300;
+      margin: 0 0 .3em 0;
+      color: #09A5A5;
+    }
+    .contents a{
+      color: inherit;
+    }
+
+
+    /* clearfix */
+    .clear {
+      clear: both;
+    }
+
+    .clearfix:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+    }
+
+    .clearfix {
+      display: inline-block;
+    }
+
+    * html .clearfix {
+      height: 1%;
+    }
+
+    /* print styling */
+    @media print{
+      body{
+       padding: 0;
+       color: black;
+      }
+      a{
+        border: none;
+      }
+    }
+
+    -->
+
 </style>
-
-
-
 </head>
 
 
 
 <body lang="EN-US">
-	<div class="resume">
-	<div class="page">
-		<div class="header">
+  <div class="header">
+    <div>
+      <div class="title-decoration-wrapper">
+        <div class="title-decoration">
+          <h1>Alice Yuan</h1>
+        </div>
+      </div>
+    </div>
+    <h5>Software Engineering Student </h5>
+    <div>
+      <ul class="no-bullets links clearfix">
+        <li><span class="label">site</span> <a href="//aliceyuan.ca" class="awhite">http://aliceyuan.ca</a></li>
+        <li><span class="label">email</span> <a href="mailto:jobs@aliceyuan.ca">jobs@aliceyuan.ca</a></li>
+      </ul>
+      <ul class="no-bullets links clearfix">
+        <li><span class="label">github</span> <a href="//github.com/AliceYuan">http://github.com/AliceYuan</a></li>
+        <li><span class="label">twitter</span> <a href="//twitter.com/Names_Alice">@Names_Alice</a></li>
+      </ul>
+    </div>
+    <div class="sub-header">
+      <h3> I love <span>learning</span>. I love <span>challenges</span>. I love <span>programming</span> <span>beautiful</span>, <span>intuitive</span> and <span>functional</span> <span>applications</span>. </h3>
+      <h3> I'd love to work for <span class="you">you</span>.</h3>
+    </div>
+  </div> <!-- end header -->
 
-		<table>
-		
-		
-		
-			
-			<tr class="line" >
-			<td>
-							<h1 id= "Alice">Alice</h1>
-			</td>
-			<td class="contactinfo rightcol">
-						<strong>1B Software Engineering</strong><br>
-						<a href="yuan.alice93@gmail.com" class="awhite">yuan.alice93@gmail.com</a><br>
-						<a href="https://github.com/AliceYuan">https://github.com/AliceYuan</a><br>
-						<h3></h3>
-						
-			</td>
+  <div class="contents">
+    <div class="col-1">
+      <div class="skills clearfix">
+        <h2 class="caps-title">Knowledge</h2>
+        <div class="section web">
+          <h4> Web Development </h4>
+          <ul>
+            <li>PHP</li>
+            <li>PHP Framework: Yii</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Javascript</li>
+            <li>PHP CMS: Drupal</li>
+            <li>Jquery</li>
+            <li>CSS/CSS3</li>
+            <li>SASS</li>
+            <li>HTML5</li>
+            <li>Responsive Web Design</li>
+            <li>Cross Browser Compatibility</li>
+          </ul>
+        </div> <!-- end web -->
 
-			
-			</tr>
-			<tr>
-				<td>
-							<h1 id= "Yuan">Yuan</h1>
-				</td>
-				<td class="address rightcol">
-					(519) 577-4068<br>
-					3488 Southwick Street,
-					Mississauga, ON, L5M 7L4<br>
-				</td>
+        <div class="section applications">
+          <h4> Applications Development </h4>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>App Engine SDK for Python</li>
+          </ul>
+        </div><!-- end applications -->
 
-			</tr>
-			
-		</table>
+        <div class="section tools">
+          <h4>Tools</h4>
+          <ul>
+            <li>Git</li>
+            <li>Mercurial</li>
+            <li>Bash</li>
+            <li>Vim</li>
+            <li>UNIX OS</li>
+            <li>Amazon EC2</li>
+          </ul>
+        </div> <!-- end tools -->
 
-		</div>
+        <div class="section soft-skills">
+          <h4>Soft Skills</h4>
+          <ul>
+            <li>Creative</li>
+            <li>Leadership</li>
+            <li>Collaborative</li>
+            <li>Fast Learner</li>
+            <li>Communication</li>
+          </ul>
+        </div> <!-- end soft-skills -->
 
-		<!--
+        </div>
+        <p class="hint"> *size indicates what I'm more comfortable with </p>
+    </div> <!-- end col-1 -->
 
-		<h2>OBJECTIVE</h2>
-		<div class="indent">
-			this sentence will change depending on the job position, job requirements and company. 
-		</div>
-		-->
-		
-		<h2>SUMMARY OF QUALIFICATIONS</h2>
-			<ul>
-					<li>Attended and gained valuable programming skills through Google Computer Science Summer Institute</li>
-					
-					<!--<li>Strong creative background obtained through attending a Regional Arts Secondary School as a visual arts major</li>-->
-					
-					<li>Leadership ability demonstrated by unifying group towards common goals in team projects and volunteering events</li>
-					
-					<li>Enthusiastic and proficient learner who voluntarily learns unfamiliar material and assimilates them to tasks </li>
-					
-					<li>Innovative problem-solver who generates workable solutions and resolves complaints under pressure</li>
-					
-					<li>Strong verbal and written communication skills with a final English mark of 95% </li>
-			</ul>
-		
-
-		<h2>TECHNICAL PROFICIENCY</h2>
-			<ul>
-					<li>Programming Languages: Proficient in C and Python. Familiar with C++, Java and Actionscript.</li> 
-					
-					<li>Web Development Languages: HTML, CSS, Javascript</li>
-					
-					<li>Tools/Platforms: Mercurial, Git, Bash, App Engine SDK for Python </li>
-					
-					<li>Skills: Working in UNIX environment, deploying websites using App Engine</li>
-					
-					<li>Operating Systems: Ubuntu, Windows XP/Vista/7, Macintosh OSX</li>
-					
-					<li>Application Software: Microsoft Office, Open Office, Adobe CS5 Creative Suite</li>
-			</ul>
-
-
-	
-
-
-		<h2>TECHNICAL EXPERIENCE</h2>
-
-			<table class="format1">
-				<tr>
-					<td class="aleft"> <strong>Google Computer Science Summer Institute</strong></td>
-					<td class="aright">Mountain View, CA</td>
-				</tr>
-				<tr>
-					<td class="aleft"> <i>Educational Summer Enrichment Program, Google Headquarters</i></td>
-					<td class="aright"> <i>June 2011 - July 2011</i></td>
-				</tr>
-			</table>
-			<ul>
-					<li>Selected out of hundreds of applicants to partake in a three week enrichment program at Google Headquarters</li>
-					
-					<li>Gained valuable knowledge about version control, deploying websites, time management and presentational skills</li>
-					
-					<li>Built and deployed web application game which can be found at: <a href="http://tictactoe-cssi.appspot.com">http://tictactoe-cssi.appspot.com</a></li>
-					
-					<li>Overtook responsibility as project manager who prioritized and motivated team towards completion of the application</li>
-					
-					<li>Presented application to employees and students and was voted best overall web application</li>
+    <div class="col-2">
 
 
-			</ul>
-			
-			
-		<h2>VOLUNTEER EXPERIENCE</h2>
-		
-		
-		
-			<table class="format1">
-				<tr>
-						<td class="aleft"> <strong>Academic Student Representative</strong></td>
-						<td class="aright">Waterloo, ON</td>
-				</tr>
-				<tr>
-						<td class="aleft"> <i>University of Waterloo</i></td>
-						<td class="aright"> <i>Sept. 2011 - Present</i></td>
-				</tr>
-			</table>
-			<ul>
-					<li>Represented as the voice of the student body of the 2016 Undergraduate Software Engineering Program</li>
-					
-					<li>Took initiative by talking to and emailing professors before the regular divisional meetings</li>
-					
-					<li>Created surveys to effectively gain feedback from the student body and relayed them in meetings</li>
-			</ul>
-			
-	
-			<!-- PAGE BREAK-->
-			<div class="break"></div>		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			<table class="format1">
-				<tr>
-						<td class="aleft"> <strong>Waterloo Events Assistant</strong></td>
-						<td class="aright">Waterloo, ON</td>
-				</tr>
-				<tr>
-						<td class="aleft"> <i>University of Waterloo</i></td>
-						<td class="aright"> <i>Sept. 2011 - Present</i></td>
-				</tr>
-			</table>
-			
-			<ul>
-					<li>Actively volunteered in numerous University Waterloo events including the events: Fall Open House, Shadow Day and "Go Eng Girl" an event for 7th to 9th grade girls which introduced them to engineering</li>
-					<li>Generated interest amongst prospective students about attending the University of Waterloo</li>
-			</ul>
-			
-			
-			<table class="format1">
-				<tr>
-						<td class="aleft"> <strong>Graphics Designer</strong></td>
-						<td class="aright">Mississauga, ON</td>
-				</tr>
-				<tr>
-						<td class="aleft"> <i>Peel Board Trustee Campaign</i></td>
-						<td class="aright"> <i>Apr. 2010 - Sept. 2010</i></td>
-				</tr>
-			</table>
-			<ul>
-					<li>Cooperated with a Peel Board Trustee Candidate to design business cards, flyers and a website</li>
-					<li>Applied knowledge of self-taught HTML in the creation of the website</li>
-			</ul>
+      <div class="experience">
+        <h2 class="caps-title">Experience</h2>
+        <ul>
+          <li>
+            <h4><span><a href="//myplanetdigital.com">Myplanet Digital</a></span> - Web Developer </h4>
+            <h5>Markham, ON <span class="date-right">May 2012 - Aug. 2012</span></h5>
+            <ul>
+              <li>
+                Built semantic and customizable websites for clients Century Link and  <a href="//downsviewpark.ca">Downsview Park</a> using <a href="//drupal.org">Drupal, a PHP content management framework</a>.
+              </li>
+              <li>
+                Improved team efficiency by implementing a better testing work flow.
+              </li>
+              <li>Regularly contributed to meetings to suggest improvements or resolutions.</li>
+            </ul>
+          </li>
 
-		
-		
-		
-		<h2>EDUCATION</h2>
-
-		<table class="format1">
-			<tr>
-					<td class="aleft"> <strong>Pursuing for Bachelor of Software Engineering</strong></td>
-					<td class="aright">Waterloo, ON</td>
-			</tr>
-			<tr>
-					<td class="aleft"> <i>Co-operative Program, University of Waterloo</i></td>
-					<td class="aright"> <i>Sept. 2011 - Present</i></td>
-			</tr>
-		</table>
-		
-		
-		<div class="indent">
-				<strong>Relevant Assignment:</strong><br>
-				<table class="format2">
-					<tr>
-							<td class="aleft"> <i>LEGO Robotics Project, Introduction to Software Engineering</i></td>
-							<td class="aright"> <i>Sept. 2011 - Nov. 2011</i></td>
-					</tr>
-				</table>
-		
-		
-		</div>
-		<ul class="cbul">
-				<li>Programmed an autonomous robot to navigate an obstacle course using the built-in colour detection sensors</li>
-				<li>Fully tested, documented, and compiled a comprehensive report on the robotics project</li>
-				<li>Actively discussed with team members and shared solutions to effectively solve issues with the robot</li>
-		</ul>
+          <li>
+          <h4>Google Computer Science Summer Institute - Student </h4>
+          <h5>Mountain View, CA <span class="date-right">Jun. 2011 - Jul. 2011</span></h5>
+          <ul>
+            <li>Selected out of hundreds of applicants to partake in a three week enrichment program at Google Headquarters.</li>
+            <li>Built and deployed web application game which can be found at: <a href="http://tictactoe-cssi.appspot.com">http://tictactoe-cssi.appspot.com</a> and was voted best overall web application.</li>
+          </ul>
+          </li>
+        </ul>
+      </div>
 
 
-		<table class="format1">
-			<tr>
-					<td class="aleft"> <strong>Ontario Secondary School Diploma</strong></td>
-					<td class="aright">Mississauga, ON</td>
-			</tr>
-			<tr>
-					<td class="aleft"> <i>Cawthra Park Secondary School</i></td>
-					<td class="aright"> <i>Oct. 2011</i></td>
-			</tr>
-		</table>
-		
-		<ul>
-		<li>Regional Arts Program: Visual Arts Major</li>
-		</ul>
-		<div class="indent">	
-			<strong>Relevant Assignment:</strong><br>
+      <div class="projects">
+        <h2 class="caps-title">Projects</h2>
+        <ul>
+          <li>
+          <h4><a href="//aliceyuan.ca">www.aliceyuan.ca</a><span class="date-right">Aug. 2012 - Sept. 2012 </span></h4>
+              Built a responsive micro-blog website built on top of the <a href="//yiiframework.com">PHP framework Yii.</a> The site also features a simplistic content management system.
+          </li>
+        </ul>
+      </div>
 
+      <div class="extracurricular">
+        <h2 class="caps-title">Extracurricular</h2>
+        <ul>
+          <li><a href="http://gracehopper.org/2012/">Grace Hopper Conference Attendant</a><span class="date-right">Oct. 2012</span></li>
+          <li>Academic Student Representative<span class="date-right">Sept. 2011 - Present</span></li>
+              <li class="bullet">Represented the student body of the 2016 software program.</li>
+          <li>Women in Engineering Volunteer<span class="date-right">Sept. 2011 - Present</span></li>
+              <li class="bullet">Volunteered as a mentor to first year students.</li>
+          <li>Waterloo Events Volunteer<span class="date-right">Sept. 2011 - Present</span></li>
+          <li><a href="http://2012.cusec.net/">Canadian University Software Engineering Conference</a> <span class="date-right">Jan. 2012</span></li>
+        </ul>
+      </div>
 
-			<table class="format2">
-			<tr>
-						<td class="aleft"> <i>Cribbage Project, Introduction to Computer Science</i></td>
-						<td class="aright"> <i>Nov. 2009 - Jan. 2010</i></td>
-			</tr>
-			</table>
-		</div>
-			<ul class="cbul">
-					<li>Created a fully functional ASCII version of the card game, cribbage in collaboration with teammates</li>
-
-					<li>Exceeded expectations by further incorporating self-taught material, and takes advantage of the cross-platform module, Pygame to create a more user friendly graphical user interface</li>
-
-					<li>Received a final grade of 100%</li>
-			</ul>
-		
-
-		<h2>AWARDS AND CERTIFICATES</h2>
-			<ul>
-					<li><strong>Citizenship Award</strong> , Cawthra Park Secondary School, Mississauga, ON, <i>2011</i></li>
-					<li><strong>Mississauga Youth Achievement Award for 'Most Dedicated'</strong>, Peel Volunteering, Mississauga, ON, <i>2010</i></li>
-			</ul>
-
-
-		<h2>EXTRACURRICULARS ACTIVITIES AND INTERESTS</h2>
-			<table class="format3">
-				<tr>
-					<td class="aleft"><strong>Humanoid Robotics Team</strong>, University of Waterloo, Waterloo, ON</td>
-					<td class="aright"> <i>Nov. 2011 - Present</i></td>
-				</tr>
-				<tr>
-					<td class="aleft"><strong>Women in Engineering</strong>, University of Waterloo, Waterloo, ON</td>
-					<td class="aright"> <i>Sept. 2011 - Present</i></td>
-				</tr>
-				<tr>
-					<td class="aleft"><strong>Canadian University Software Engineering Conference</strong>, Montreal, QC</td>
-					<td class="aright"> <i>Jan. 2012</i></td>
-				</tr>
-				<tr>
-					<td class="aleft"><strong>Ontario Women in Computing Conference</strong>, University of Toronto, Toronto, ON</td>
-					<td class="aright"> <i>Oct. 2011</i></td>
-				</tr>
-				<tr>
-					<td class="aleft"><strong>Environmental Club</strong>, Cawthra Park Secondary School, Mississauga, ON</td>
-					<td class="aright"> <i>Sept. 2010 - June 2011</i></td>
-				</tr>
-				<tr>
-					<td class="aleft"><strong>Yearbook Layout Editor</strong>, Cawthra Park Secondary School, Mississauga, ON</td>
-					<td class="aright"> <i>Oct. 2010 - May 2011</i></td>
-				</tr>
-			</table>
-			
-			
-			
-	</div>
-	</div>
+      <div class="education">
+        <h2 class="caps-title">Education</h2>
+        <ul class="no-bullets">
+          <li>
+          Pursuing Bachelor of Software Engineering<span class="date-right">Sept. 2011 - Present</span> <br>
+          Co-operative program, University of Waterloo
+          </li>
+        </ul>
+      </div>
+    </div> <!-- end col-2 -->
+  </div> <!-- end contents -->
+</body>

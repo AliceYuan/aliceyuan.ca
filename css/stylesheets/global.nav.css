@@ -1,7 +1,7 @@
 /* ==========================================================================
  * Menu -Styling - default
  * ==========================================================================*/
-/* line 25, ../sass/global.nav.scss */
+/* line 26, ../sass/global.nav.scss */
 .main-menu-wrapper {
   background: white;
   z-index: 3;
@@ -12,11 +12,11 @@
   -o-transition: height 0.7s, width 0.7s;
   transition: height 0.7s, width 0.7s;
 }
-/* line 31, ../sass/global.nav.scss */
+/* line 32, ../sass/global.nav.scss */
 .main-menu-wrapper .logo {
   float: left;
 }
-/* line 33, ../sass/global.nav.scss */
+/* line 34, ../sass/global.nav.scss */
 .main-menu-wrapper .logo a {
   width: 100%;
   height: 100%;
@@ -28,24 +28,25 @@
   -o-transition: background 0.5s;
   transition: background 0.5s;
 }
-/* line 40, ../sass/global.nav.scss */
+/* line 41, ../sass/global.nav.scss */
 .main-menu-wrapper .logo a:hover, .main-menu-wrapper .logo a:focus {
   background: #ad958c;
 }
-/* line 44, ../sass/global.nav.scss */
+/* line 45, ../sass/global.nav.scss */
 .main-menu-wrapper .logo h1 {
+  font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
   text-align: center;
   -webkit-transition: font-size 0.7s;
   -moz-transition: font-size 0.7s;
   -o-transition: font-size 0.7s;
   transition: font-size 0.7s;
 }
-/* line 49, ../sass/global.nav.scss */
+/* line 51, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu {
   height: 102%;
   width: 100%;
 }
-/* line 52, ../sass/global.nav.scss */
+/* line 54, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul {
   height: 100%;
   width: 100%;
@@ -56,15 +57,15 @@
 /* ==========================================================================
  * Menu -Styling - Menu Buttons
  * ==========================================================================*/
-/* line 65, ../sass/global.nav.scss */
+/* line 67, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul {
   /* Active main-menu list styling */
 }
-/* line 66, ../sass/global.nav.scss */
+/* line 68, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul li {
   position: relative;
 }
-/* line 69, ../sass/global.nav.scss */
+/* line 71, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul li p {
   color: #6f7d81;
   position: absolute;
@@ -77,13 +78,17 @@
   -o-transition: top 1s, color 0.5s, background 0.5s 0.2s;
   transition: top 1s, color 0.5s, background 0.5s 0.2s;
 }
-/* line 79, ../sass/global.nav.scss */
+/* line 81, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul li .button-outer {
   display: table;
   clear: both;
   position: relative;
 }
-/* line 84, ../sass/global.nav.scss */
+/* line 87, ../sass/global.nav.scss */
+.main-menu-wrapper .main-menu .nav ul li a:hover .button-inner, .main-menu-wrapper .main-menu .nav ul li a:focus .button-inner {
+  background: #52c5c0;
+}
+/* line 91, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul li .button-inner {
   background: #61b3af;
   margin: 0 7px;
@@ -97,12 +102,12 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s;
-  -moz-transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s;
-  -o-transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s;
-  transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s;
+  -webkit-transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s, background 0.5s;
+  -moz-transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s, background 0.5s;
+  -o-transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s, background 0.5s;
+  transition: height 0.6s, width 0.6s, left 0.6s, top 0.6s, background 0.5s;
 }
-/* line 97, ../sass/global.nav.scss */
+/* line 104, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul img.icon {
   -webkit-transition: height 0.8s, width 0.8s;
   -moz-transition: height 0.8s, width 0.8s;
@@ -111,8 +116,9 @@
   z-index: 11;
   position: absolute;
 }
-/* line 105, ../sass/global.nav.scss */
+/* line 112, ../sass/global.nav.scss */
 .main-menu-wrapper .main-menu .nav ul li.active .button-inner {
+  background: #52c5c0;
   height: 45px;
   width: 45px;
   left: 0px;
@@ -122,11 +128,11 @@
 /* ==========================================================================
  * Scroll to top button
  * ==========================================================================*/
-/* line 119, ../sass/global.nav.scss */
+/* line 127, ../sass/global.nav.scss */
 .scroll-top {
   z-index: 50;
 }
-/* line 121, ../sass/global.nav.scss */
+/* line 129, ../sass/global.nav.scss */
 .scroll-top a {
   width: 50px;
   height: 50px;
@@ -138,7 +144,7 @@
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 128, ../sass/global.nav.scss */
+/* line 136, ../sass/global.nav.scss */
 .scroll-top a .arrow {
   position: absolute;
   top: 15px;
@@ -150,40 +156,40 @@
   border-bottom: 20px solid rgba(255, 255, 255, 0.6);
 }
 
-/* line 142, ../sass/global.nav.scss */
+/* line 150, ../sass/global.nav.scss */
 .footer {
   min-width: 100%;
   text-align: center;
-  background: #98c5bc;
+  background: #afcfc9;
   min-height: 4em;
   padding: 1em 0;
   position: absolute;
   bottom: 0;
 }
-/* line 150, ../sass/global.nav.scss */
+/* line 158, ../sass/global.nav.scss */
 .footer p {
   vertical-align: bottom;
   margin-bottom: .5em;
 }
-/* line 154, ../sass/global.nav.scss */
+/* line 162, ../sass/global.nav.scss */
 .footer ul {
   margin: 0 auto;
   clear: both;
 }
-/* line 158, ../sass/global.nav.scss */
+/* line 166, ../sass/global.nav.scss */
 .footer li {
   float: left;
   padding: 0.2em 0.5em;
 }
-/* line 161, ../sass/global.nav.scss */
+/* line 169, ../sass/global.nav.scss */
 .footer li a {
   color: white;
 }
-/* line 163, ../sass/global.nav.scss */
+/* line 171, ../sass/global.nav.scss */
 .footer li a:hover, .footer li a:focus {
   text-decoration: underline;
 }
-/* line 166, ../sass/global.nav.scss */
+/* line 174, ../sass/global.nav.scss */
 .footer li a:active, .footer li a:visited {
   color: white;
 }

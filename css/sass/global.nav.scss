@@ -1,7 +1,7 @@
 //SASS Variables
 $overview_border_radius: 6px;
-$back_color: #98C5BC;
-$footer_color: #98C5BC;//#8ABFB4;//#94CDCB; //light blue
+$back_color: #AFCFC9;
+$footer_color:#AFCFC9;
 $color2: #C29B8D;
 $color2-hover: #AD958C;//#AA897D;//#A57463;//#645656;
 $color3: #8DB356;//#AF7F7F;//#AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
@@ -13,6 +13,7 @@ $default-button-size-small: 25px;
 $hover-button-size: 45px;
 $default-button-size: 35px;
 $button-color: #61B3AF;
+$button-color-active: #52C5C0;
 $button-color-border: #6F7D81;
 //SASS Import
 @import "compass";
@@ -42,6 +43,7 @@ $button-color-border: #6F7D81;
       }
     }
     h1{
+      font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
       text-align: center;
       @include transition(font-size 0.7s);
     }
@@ -81,6 +83,11 @@ $button-color-border: #6F7D81;
       clear:    both;
       position: relative;
     }
+    a:hover,a:focus{
+      .button-inner{
+        background: $button-color-active;
+      }
+    }
     .button-inner{
       background: $button-color;
       margin:     0 7px;
@@ -91,7 +98,7 @@ $button-color-border: #6F7D81;
       width:      $default-button-size;
 
       @include    border-radius( 50%);
-      @include    transition( height 0.6s, width 0.6s, left 0.6s, top 0.6s );
+      @include    transition( height 0.6s, width 0.6s, left 0.6s, top 0.6s, background 0.5s );
     }
   }
   img.icon{
@@ -103,10 +110,11 @@ $button-color-border: #6F7D81;
 
   li.active{
     .button-inner{
-      height:   $hover-button-size;
-      width:    $hover-button-size;
-      left:    0px;
-      top:      2px;
+      background: $button-color-active;
+      height:     $hover-button-size;
+      width:      $hover-button-size;
+      left:       0px;
+      top:        2px;
     }
   }
 }

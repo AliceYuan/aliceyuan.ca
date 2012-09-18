@@ -182,4 +182,5 @@ class PostController extends Controller
 		return $this->_model;
 	}
 
+
 }

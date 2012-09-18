@@ -1,13 +1,11 @@
 <div class="main index">
   <div class="page-title-wrapper">
-    <a href="/" >
       <div class="page-title clearfix">
           <h1>
             <span class="alice">Alice</span>
             <span class="yuan"> Yuan </span>
           </h1>
       </div>
-    </a>
 
 
     <div class="slogan subtitle">
@@ -27,14 +25,16 @@
   <div class="page-content">
     <div class="recent-posts clearfix">
       <h1 class="recent-title">
-        Recent Posts
+        <a href="<?php echo Yii::app()->createUrl('post/index'); ?>"> Recent Posts</a>
       </h1>
 
+      <ul class="col">
         <?php $this->widget('zii.widgets.CListView', array(
           'dataProvider'=>$dataProvider,
           'itemView'=>'_recent',
           'template'=>"{items}\n{pager}",
         )); ?>
+      </ul>
     </div> <!-- recent-posts end -->
 
   </div><!-- page-content end -->

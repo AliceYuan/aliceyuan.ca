@@ -3,13 +3,11 @@ $this->pageTitle=Yii::app()->name . ' - Art';
 ?>
 <div class="main about">
   <div class="page-title-wrapper">
-    <a href="/" >
       <div class="page-title clearfix">
           <h1>
             <span class="art"> Art </span>
           </h1>
       </div>
-    </a>
 
 
     <div class="subtitle">

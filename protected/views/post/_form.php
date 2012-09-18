@@ -19,6 +19,11 @@
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
+  <div class="row">
+		<?php echo $form->labelEx($model,'category'); ?>
+		<?php echo $form->textField($model,'category',array('size'=>20,'maxlength'=>30)); ?>
+	</div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'tags'); ?>
 		<?php $this->widget('CAutoComplete', array(

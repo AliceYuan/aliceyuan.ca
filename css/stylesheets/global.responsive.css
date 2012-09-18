@@ -484,48 +484,53 @@
     float: left;
     min-height: 5em;
   }
+
+  /* line 474, ../sass/global.responsive.scss */
+  .recent-posts ul.col li {
+    width: 49.5%;
+  }
 }
 @media (min-width: 480px) and (max-width: 750px) {
-  /* line 477, ../sass/global.responsive.scss */
+  /* line 480, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan {
     top: 27% !important;
   }
-  /* line 480, ../sass/global.responsive.scss */
+  /* line 483, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 span {
     display: block;
   }
 }
 @media (min-width: 480px) and (max-width: 1023px) {
-  /* line 487, ../sass/global.responsive.scss */
+  /* line 490, ../sass/global.responsive.scss */
   .page-title-wrapper {
     margin: 5em auto;
   }
-  /* line 489, ../sass/global.responsive.scss */
+  /* line 492, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title {
     font-size: 4.7em;
     width: 2.7em;
     height: 2.7em;
   }
-  /* line 494, ../sass/global.responsive.scss */
+  /* line 497, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 span {
     line-height: 0.8em;
   }
-  /* line 497, ../sass/global.responsive.scss */
+  /* line 500, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 .alice {
     padding-right: 0.2em;
   }
 
-  /* line 506, ../sass/global.responsive.scss */
+  /* line 509, ../sass/global.responsive.scss */
   .slogan h2 > p:nth-child(1) {
     margin-right: 10.5em;
   }
 
-  /* line 511, ../sass/global.responsive.scss */
+  /* line 514, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
     font-size: 1.6em;
   }
 
-  /* line 517, ../sass/global.responsive.scss */
+  /* line 520, ../sass/global.responsive.scss */
   .recent-posts [class*='col-'] {
     width: 85%;
     margin: 0 7.5%;
@@ -533,80 +538,97 @@
     min-height: 5em;
   }
 
-  /* line 531, ../sass/global.responsive.scss */
+  /* line 534, ../sass/global.responsive.scss */
   [class*='post-'] .content .body {
     font-size: 1.1em;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   /* line 540, ../sass/global.responsive.scss */
+  .recent-posts ul.col li {
+    width: 49.5%;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  /* line 545, ../sass/global.responsive.scss */
+  .recent-posts ul.col li {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 553, ../sass/global.responsive.scss */
   .page-title-wrapper {
     margin: 5em auto;
   }
-  /* line 542, ../sass/global.responsive.scss */
+  /* line 555, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title {
     font-size: 6.2em;
     width: 2.7em;
     height: 2.7em;
   }
-  /* line 547, ../sass/global.responsive.scss */
+  /* line 560, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 span {
     line-height: 0.8em;
   }
-  /* line 550, ../sass/global.responsive.scss */
+  /* line 563, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title h1 .alice {
     padding-right: 0.2em;
   }
 
-  /* line 567, ../sass/global.responsive.scss */
+  /* line 574, ../sass/global.responsive.scss */
   [class*='post-'] .content .body {
     font-size: 1.16em;
     line-height: 1.5em;
   }
 
-  /* line 574, ../sass/global.responsive.scss */
+  /* line 581, ../sass/global.responsive.scss */
   .slogan h2 > p:nth-child(1) {
     margin-right: 11.5em;
   }
+
+  /* line 585, ../sass/global.responsive.scss */
+  .recent-posts ul.col li {
+    width: 49.5%;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1150px) {
-  /* line 582, ../sass/global.responsive.scss */
+  /* line 592, ../sass/global.responsive.scss */
   .page-title-wrapper .page-title {
     font-size: 5.8em;
   }
 
-  /* line 586, ../sass/global.responsive.scss */
+  /* line 596, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
     font-size: 1.8em;
   }
 }
 @media (min-width: 1151px) {
-  /* line 594, ../sass/global.responsive.scss */
+  /* line 604, ../sass/global.responsive.scss */
   .page-title-wrapper .slogan h2 {
     font-size: 2.1em;
   }
 }
 /* Filters */
 @media (max-width: 479px) {
-  /* line 602, ../sass/global.responsive.scss */
+  /* line 612, ../sass/global.responsive.scss */
   .filters {
     font-size: 0.75em;
   }
 }
 @media (min-width: 480px) and (max-width: 766px) {
-  /* line 602, ../sass/global.responsive.scss */
+  /* line 612, ../sass/global.responsive.scss */
   .filters {
     font-size: 1em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  /* line 602, ../sass/global.responsive.scss */
+  /* line 612, ../sass/global.responsive.scss */
   .filters {
     font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) {
-  /* line 602, ../sass/global.responsive.scss */
+  /* line 612, ../sass/global.responsive.scss */
   .filters {
     font-size: 1.2em;
   }

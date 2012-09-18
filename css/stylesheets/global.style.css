@@ -4,62 +4,64 @@
 /* ==========================================================================
  * Global Styling Changes
  * ==========================================================================*/
-/* line 33, ../sass/global.style.scss */
+/* line 35, ../sass/global.style.scss */
 body {
-  font-family: QuicksandBookRegular, Arial, Helvetica, sans-serif;
+  font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
   font-size: 16px;
   color: white;
   min-width: 300px;
   min-height: 300px;
-  background: #98c5bc;
+  background: #afcfc9;
 }
 
-/* line 41, ../sass/global.style.scss */
+/* line 43, ../sass/global.style.scss */
 body.front {
-  background: #98c5bc;
+  background: #afcfc9;
 }
 
-/* line 45, ../sass/global.style.scss */
+/* line 47, ../sass/global.style.scss */
 h1 {
+  font-family: Copperplate Gothic Light, sans-serif;
   font-size: 2em;
 }
 
-/* line 48, ../sass/global.style.scss */
+/* line 51, ../sass/global.style.scss */
 h2 {
   font-size: 1.5em;
+  font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
 }
 
-/* line 51, ../sass/global.style.scss */
+/* line 55, ../sass/global.style.scss */
 h3 {
   font-size: 1.2em;
-  font-weight: bold;
+  font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
 }
 
-/* line 56, ../sass/global.style.scss */
+/* line 60, ../sass/global.style.scss */
 h4 {
   font-size: 1em;
-  font-weight: bold;
+  font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
 }
 
-/* line 61, ../sass/global.style.scss */
+/* line 65, ../sass/global.style.scss */
 b {
-  font-weight: bold;
+  font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
 }
 
-/* line 64, ../sass/global.style.scss */
+/* line 68, ../sass/global.style.scss */
 p {
   line-height: 1.5em;
   font-size: 1em;
   margin-bottom: 2em;
 }
 
-/* line 69, ../sass/global.style.scss */
+/* line 73, ../sass/global.style.scss */
 a {
   color: #1B9EE0;
   text-decoration: none;
 }
 
-/* line 73, ../sass/global.style.scss */
+/* line 77, ../sass/global.style.scss */
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -67,12 +69,12 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 81, ../sass/global.style.scss */
+/* line 85, ../sass/global.style.scss */
 a:hover, a:focus, a:active {
   color: #4AC1FD;
 }
 
-/* line 85, ../sass/global.style.scss */
+/* line 89, ../sass/global.style.scss */
 a:visited {
   color: #5496B8;
 }
@@ -80,12 +82,12 @@ a:visited {
 /* ==========================================================================
  * Addtional Global Styling
  * ==========================================================================*/
-/* line 94, ../sass/global.style.scss */
+/* line 98, ../sass/global.style.scss */
 .clear {
   clear: both;
 }
 
-/* line 98, ../sass/global.style.scss */
+/* line 102, ../sass/global.style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -95,22 +97,22 @@ a:visited {
   height: 0;
 }
 
-/* line 107, ../sass/global.style.scss */
+/* line 111, ../sass/global.style.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 112, ../sass/global.style.scss */
+/* line 116, ../sass/global.style.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 117, ../sass/global.style.scss */
+/* line 121, ../sass/global.style.scss */
 .noBorderL {
   border-left: none;
 }
 
-/* line 120, ../sass/global.style.scss */
+/* line 124, ../sass/global.style.scss */
 .noBorderR {
   border-left: none;
 }
@@ -118,22 +120,21 @@ a:visited {
 /* ==========================================================================
  * General Layout Specific Styling
  * ==========================================================================*/
-/* line 127, ../sass/global.style.scss */
+/* line 131, ../sass/global.style.scss */
 .social {
   position: absolute;
   bottom: 0;
   z-index: 1;
 }
-/* line 132, ../sass/global.style.scss */
+/* line 136, ../sass/global.style.scss */
 .social li {
   margin-left: 20px;
   float: right;
   font-family: "SSSocial";
-  font-weight: bold;
   font-size: 400%;
   position: relative;
 }
-/* line 139, ../sass/global.style.scss */
+/* line 143, ../sass/global.style.scss */
 .social li a {
   color: white;
   opacity: 0.7;
@@ -144,7 +145,7 @@ a:visited {
   -o-transition: color 0.4s ease-out, opacity 0.6s;
   transition: color 0.4s ease-out, opacity 0.6s;
 }
-/* line 144, ../sass/global.style.scss */
+/* line 148, ../sass/global.style.scss */
 .social li a span {
   position: absolute;
   top: -11.9%;
@@ -165,27 +166,27 @@ a:visited {
   transition: opacity 0.4s;
   behavior: url(PIE.htc);
 }
-/* line 159, ../sass/global.style.scss */
+/* line 163, ../sass/global.style.scss */
 .social li a:hover, .social li a:focus {
   opacity: 1;
 }
-/* line 161, ../sass/global.style.scss */
+/* line 165, ../sass/global.style.scss */
 .social li a:hover span, .social li a:focus span {
   opacity: 1;
 }
-/* line 165, ../sass/global.style.scss */
+/* line 169, ../sass/global.style.scss */
 .social li a:hover.facebook, .social li a:focus.facebook {
   color: #3B5998;
 }
-/* line 167, ../sass/global.style.scss */
+/* line 171, ../sass/global.style.scss */
 .social li a:hover.twitter, .social li a:focus.twitter {
   color: #2daae1;
 }
-/* line 169, ../sass/global.style.scss */
+/* line 173, ../sass/global.style.scss */
 .social li a:hover.linkedin, .social li a:focus.linkedin {
   color: #0370a9;
 }
-/* line 171, ../sass/global.style.scss */
+/* line 175, ../sass/global.style.scss */
 .social li a:hover.googleplus, .social li a:focus.googleplus {
   color: #CC0000;
 }
@@ -193,7 +194,7 @@ a:visited {
 /* ==================================================================================
  *      Global Styling of main content
  * ==================================================================================*/
-/* line 181, ../sass/global.style.scss */
+/* line 185, ../sass/global.style.scss */
 .main-wrapper {
   position: absolute;
   top: 0;
@@ -203,14 +204,14 @@ a:visited {
   width: 92%;
   overflow: hidden;
 }
-/* line 189, ../sass/global.style.scss */
+/* line 193, ../sass/global.style.scss */
 .main-wrapper .main {
   max-width: 1100px;
   /* ==================================================================================
    *      Default Pages styling
    * ==================================================================================*/
 }
-/* line 195, ../sass/global.style.scss */
+/* line 199, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper {
   margin: 4em auto 0 auto;
   width: 95%;
@@ -220,13 +221,13 @@ a:visited {
    *      Front Page styling
    * ==================================================================================*/
 }
-/* line 200, ../sass/global.style.scss */
+/* line 204, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper a {
   display: inline-block;
 }
-/* line 203, ../sass/global.style.scss */
+/* line 207, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .page-title {
-  background: #c29b8d;
+  background: #718488 url("../../img/city.jpg") 380px center;
   position: relative;
   border: white 0.1em solid;
   z-index: 2;
@@ -245,7 +246,7 @@ a:visited {
   box-shadow: inset 2px -2px 3px rgba(60, 60, 60, 0.25), 0 0 6px rgba(80, 80, 80, 0.4);
   behavior: url(PIE.htc);
 }
-/* line 213, ../sass/global.style.scss */
+/* line 217, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .page-title h1 {
   font-size: 1em;
   float: left;
@@ -254,30 +255,30 @@ a:visited {
   text-shadow: 2px -1px rgba(50, 50, 50, 0.6);
   width: 100%;
 }
-/* line 220, ../sass/global.style.scss */
+/* line 224, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .page-title h1:first-letter {
   font-size: 1.2em;
 }
-/* line 223, ../sass/global.style.scss */
+/* line 227, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .page-title h1 span {
   display: block;
   margin: 0;
   color: white;
 }
-/* line 230, ../sass/global.style.scss */
+/* line 234, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .page-title::after {
   content: '';
   -webkit-box-shadow: inset -2px 2px 5px black;
   -moz-box-shadow: inset -2px 2px 5px black;
   box-shadow: inset -2px 2px 5px black;
 }
-/* line 234, ../sass/global.style.scss */
+/* line 238, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper a:hover .page-title, .main-wrapper .main .page-title-wrapper a:focus .page-title {
   background: url(../../img/stock1.jpg);
 }
-/* line 240, ../sass/global.style.scss */
+/* line 244, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .slogan {
-  text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
+  text-shadow: 1px 2px rgba(100, 100, 100, 0.3);
   position: absolute;
   top: 36%;
   left: 0;
@@ -291,29 +292,28 @@ a:visited {
   border-radius: 1em;
   margin-bottom: 30px;
 }
-/* line 250, ../sass/global.style.scss */
+/* line 254, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .slogan p {
   margin-bottom: 0;
 }
-/* line 253, ../sass/global.style.scss */
-.main-wrapper .main .page-title-wrapper .slogan h2 {
-  font-family: "QuicksandBoldRegular";
-  color: white;
-}
 /* line 257, ../sass/global.style.scss */
+.main-wrapper .main .page-title-wrapper .slogan h2 {
+  color: #5f5f5f;
+}
+/* line 260, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .slogan h2 > p:nth-child(1) {
   text-align: right;
 }
-/* line 262, ../sass/global.style.scss */
+/* line 265, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .slogan h2 > p:nth-child(2) {
   text-align: left;
 }
-/* line 265, ../sass/global.style.scss */
+/* line 268, ../sass/global.style.scss */
 .main-wrapper .main .page-title-wrapper .slogan h2 > p {
   float: left;
 }
 
-/* line 276, ../sass/global.style.scss */
+/* line 279, ../sass/global.style.scss */
 .page-content {
   max-width: 960px;
   margin: 5em auto 20em;
@@ -322,7 +322,7 @@ a:visited {
 /* ==================================================================================
  *      Front Page recent Posts Styling
  * ==================================================================================*/
-/* line 284, ../sass/global.style.scss */
+/* line 287, ../sass/global.style.scss */
 .recent-posts {
   background: white;
   color: #443b35;
@@ -336,47 +336,43 @@ a:visited {
   -moz-box-shadow: -3px 4px 10px rgba(77, 77, 77, 0.56);
   box-shadow: -3px 4px 10px rgba(77, 77, 77, 0.56);
 }
-/* line 290, ../sass/global.style.scss */
+/* line 293, ../sass/global.style.scss */
 .recent-posts a {
   color: #443b35;
 }
-/* line 294, ../sass/global.style.scss */
+/* line 297, ../sass/global.style.scss */
 .recent-posts a:hover h2, .recent-posts a:focus h2 {
   color: #665F5A;
 }
-/* line 297, ../sass/global.style.scss */
+/* line 300, ../sass/global.style.scss */
 .recent-posts a:hover .content p, .recent-posts a:focus .content p {
   text-decoration: underline;
 }
-/* line 301, ../sass/global.style.scss */
+/* line 304, ../sass/global.style.scss */
 .recent-posts h1 {
   font-size: 2em;
-  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
-/* line 308, ../sass/global.style.scss */
+/* line 311, ../sass/global.style.scss */
 .recent-posts h2 {
   font-size: 1.7em;
-  font-weight: bold;
   margin-bottom: 0.5em;
   margin-right: 2em;
 }
-/* line 316, ../sass/global.style.scss */
+/* line 319, ../sass/global.style.scss */
 .recent-posts [class*='post-'] {
   width: 100%;
   overflow: hidden;
   float: left;
-  border-top: 1px solid #F0F0E5;
-  border-right: 1px solid #F0F0E5;
   position: relative;
 }
-/* line 323, ../sass/global.style.scss */
+/* line 324, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .content {
   padding: 6%;
 }
-/* line 326, ../sass/global.style.scss */
+/* line 327, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date {
   position: absolute;
   top: 0;
@@ -396,23 +392,23 @@ a:visited {
   -moz-box-shadow: 2px -2px 2px #f0f0e5;
   box-shadow: 2px -2px 2px #f0f0e5;
   color: #443b35;
-  font-weight: bold;
+  font-family: QuicksandBoldRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
 }
-/* line 340, ../sass/global.style.scss */
+/* line 342, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date span {
   display: block;
   text-align: center;
 }
-/* line 344, ../sass/global.style.scss */
+/* line 346, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date .M {
   font-size: 1.5em;
 }
-/* line 345, ../sass/global.style.scss */
+/* line 347, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .date .D {
   font-size: 2.5em;
   margin: 0.2em 0;
 }
-/* line 348, ../sass/global.style.scss */
+/* line 350, ../sass/global.style.scss */
 .recent-posts [class*='post-'] .content img {
   max-height: 9em;
   margin: 0.4em;
@@ -422,18 +418,13 @@ a:visited {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 355, ../sass/global.style.scss */
-.recent-posts [class*='col-'] {
-  width: 49.5%;
+/* line 357, ../sass/global.style.scss */
+.recent-posts ul.col li {
   float: left;
   min-height: 5em;
-  border-bottom: 1px solid #F0F0E5;
+  border: 1px solid #F0F0E5;
 }
-/* line 361, ../sass/global.style.scss */
-.recent-posts .col-1 {
-  border-left: 1px solid #F0F0E5;
-}
-/* line 366, ../sass/global.style.scss */
+/* line 362, ../sass/global.style.scss */
 .recent-posts .slide {
   margin: auto;
   -webkit-border-radius: 50%;
@@ -448,12 +439,12 @@ a:visited {
   background: #DDEEEE;
   position: relative;
 }
-/* line 376, ../sass/global.style.scss */
+/* line 372, ../sass/global.style.scss */
 .recent-posts .slide a h4 {
   font-size: 2em;
   margin: 20% 3%;
 }
-/* line 380, ../sass/global.style.scss */
+/* line 376, ../sass/global.style.scss */
 .recent-posts .slide a .mask {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -467,11 +458,11 @@ a:visited {
   width: 100%;
 }
 
-/* line 393, ../sass/global.style.scss */
+/* line 389, ../sass/global.style.scss */
 .content-wrapper {
   margin: 10px;
 }
-/* line 396, ../sass/global.style.scss */
+/* line 392, ../sass/global.style.scss */
 .content-wrapper #content {
   height: 300px;
   background: white;
@@ -481,13 +472,13 @@ a:visited {
 /* ==================================================================================
  *      Global Contact Lightbox Styling
  * ==================================================================================*/
-/* line 407, ../sass/global.style.scss */
+/* line 403, ../sass/global.style.scss */
 #contact {
   max-width: 900px;
   display: none;
 }
 
-/* line 412, ../sass/global.style.scss */
+/* line 408, ../sass/global.style.scss */
 .contact-main {
   max-width: 90%;
   padding: 5% 0;
@@ -497,40 +488,36 @@ a:visited {
 /* ==================================================================================
  *      Filter Buttons
  * ==================================================================================*/
-/* line 421, ../sass/global.style.scss */
+/* line 417, ../sass/global.style.scss */
 .filters {
   text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
   clear: both;
   color: white;
   font-size: 1.25em;
 }
-/* line 426, ../sass/global.style.scss */
+/* line 422, ../sass/global.style.scss */
 .filters h3 {
   text-align: center;
 }
-/* line 429, ../sass/global.style.scss */
+/* line 425, ../sass/global.style.scss */
 .filters li {
   float: left;
   margin: 0 1em;
 }
-/* line 435, ../sass/global.style.scss */
+/* line 431, ../sass/global.style.scss */
 .filters button {
   color: white;
   cursor: pointer;
   text-align: center;
   background: transparent;
   border: none;
-  font-family: inherit;
+  font-family: QuicksandBoldRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
   font-size: inherit;
   text-shadow: inherit;
   padding: 0;
   margin: 0;
 }
-/* line 447, ../sass/global.style.scss */
-.filters button:hover, .filters button:focus {
-  font-weight: bold;
-}
-/* line 452, ../sass/global.style.scss */
+/* line 448, ../sass/global.style.scss */
 .filters button span {
   display: block;
   width: 3.5em;
@@ -549,13 +536,13 @@ a:visited {
   border-radius: 50%;
   behavior: url(PIE.htc);
 }
-/* line 463, ../sass/global.style.scss */
+/* line 459, ../sass/global.style.scss */
 .filters .categories {
   margin-left: 28%;
   clear: both;
 }
 
-/* line 469, ../sass/global.style.scss */
+/* line 465, ../sass/global.style.scss */
 .filters.fixed {
   position: fixed;
   top: 0;
@@ -563,7 +550,7 @@ a:visited {
   z-index: 10;
   font-size: 0.5em;
 }
-/* line 475, ../sass/global.style.scss */
+/* line 471, ../sass/global.style.scss */
 .filters.fixed li {
   float: none;
 }

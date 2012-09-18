@@ -1,12 +1,10 @@
 <div class="main blog">
   <div class="page-title-wrapper blog">
-    <a href="/" >
       <div class="page-title clearfix small">
           <h1>
             <span class="blog"> Blog </span>
           </h1>
       </div>
-    </a>
 
 
     <div class="subtitle">

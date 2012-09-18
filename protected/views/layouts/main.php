@@ -42,9 +42,15 @@
         .gradient {
            filter: none;
         }
-      </style>
-    <![endif]-->
+      </style> -->
 
+    <!--[if lt IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+
+    <![endif]-->
 
     <!-- Javscript -->
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.7.2.min.js" ></script>
@@ -150,9 +156,6 @@
 
 
   <!-- fancybox contact box -->
-  <div id="contact" name="contact" title="I'd love to chat">
-
-  </div>
 
 </body>
 </html>
