@@ -471,9 +471,6 @@ $back_color: transparent;
     .col-1{
     }
   }
-  .recent-posts ul.col li{
-    width: 100%;
-  }
 }
 
 @media (min-width: 480px) and (max-width: 750px) {
@@ -525,8 +522,6 @@ $back_color: transparent;
       .content .shortened-desc{
       }
     }
-    .col-1{
-    }
   }
   [class*='post-']{
     .content h2{
@@ -537,14 +532,14 @@ $back_color: transparent;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  .recent-posts ul.col li{
-    width: 49.5%;
-  }
+  // .recent-posts ul.col li{
+  //   width: 49.5%;
+  // }
 }
 @media (min-width: 480px) and (max-width: 766px) {
-  .recent-posts ul.col li{
-    width: 100%;
-  }
+  // .recent-posts ul.col li{
+  //   width: 100%;
+  // }
 }
 
 //width only responsive design min width standard tablet size
@@ -582,9 +577,9 @@ $back_color: transparent;
       margin-right: 11.5em;
     }
   }
-  .recent-posts ul.col li{
-    width: 49.5%;
-  }
+  // .recent-posts ul.col li{
+  //   width: 49.5%;
+  // }
 }
 
 

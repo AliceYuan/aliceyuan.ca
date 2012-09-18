@@ -419,12 +419,22 @@ a:visited {
   border-radius: 0.5em;
 }
 /* line 357, ../sass/global.style.scss */
-.recent-posts ul.col li {
+.recent-posts ul.posts {
+  overflow-x: scroll;
+  padding-bottom: 2em;
+}
+/* line 361, ../sass/global.style.scss */
+.recent-posts ul.posts .items {
+  width: 2000px;
+}
+/* line 364, ../sass/global.style.scss */
+.recent-posts ul.posts li {
   float: left;
   min-height: 5em;
   border: 1px solid #F0F0E5;
+  width: 330px;
 }
-/* line 362, ../sass/global.style.scss */
+/* line 370, ../sass/global.style.scss */
 .recent-posts .slide {
   margin: auto;
   -webkit-border-radius: 50%;
@@ -439,12 +449,12 @@ a:visited {
   background: #DDEEEE;
   position: relative;
 }
-/* line 372, ../sass/global.style.scss */
+/* line 380, ../sass/global.style.scss */
 .recent-posts .slide a h4 {
   font-size: 2em;
   margin: 20% 3%;
 }
-/* line 376, ../sass/global.style.scss */
+/* line 384, ../sass/global.style.scss */
 .recent-posts .slide a .mask {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -458,11 +468,11 @@ a:visited {
   width: 100%;
 }
 
-/* line 389, ../sass/global.style.scss */
+/* line 397, ../sass/global.style.scss */
 .content-wrapper {
   margin: 10px;
 }
-/* line 392, ../sass/global.style.scss */
+/* line 400, ../sass/global.style.scss */
 .content-wrapper #content {
   height: 300px;
   background: white;
@@ -472,13 +482,7 @@ a:visited {
 /* ==================================================================================
  *      Global Contact Lightbox Styling
  * ==================================================================================*/
-/* line 403, ../sass/global.style.scss */
-#contact {
-  max-width: 900px;
-  display: none;
-}
-
-/* line 408, ../sass/global.style.scss */
+/* line 411, ../sass/global.style.scss */
 .contact-main {
   max-width: 90%;
   padding: 5% 0;
@@ -488,23 +492,23 @@ a:visited {
 /* ==================================================================================
  *      Filter Buttons
  * ==================================================================================*/
-/* line 417, ../sass/global.style.scss */
+/* line 420, ../sass/global.style.scss */
 .filters {
   text-shadow: -1px 1px rgba(100, 100, 100, 0.3);
   clear: both;
   color: white;
   font-size: 1.25em;
 }
-/* line 422, ../sass/global.style.scss */
+/* line 425, ../sass/global.style.scss */
 .filters h3 {
   text-align: center;
 }
-/* line 425, ../sass/global.style.scss */
+/* line 428, ../sass/global.style.scss */
 .filters li {
   float: left;
   margin: 0 1em;
 }
-/* line 431, ../sass/global.style.scss */
+/* line 434, ../sass/global.style.scss */
 .filters button {
   color: white;
   cursor: pointer;
@@ -517,7 +521,7 @@ a:visited {
   padding: 0;
   margin: 0;
 }
-/* line 448, ../sass/global.style.scss */
+/* line 451, ../sass/global.style.scss */
 .filters button span {
   display: block;
   width: 3.5em;
@@ -536,13 +540,13 @@ a:visited {
   border-radius: 50%;
   behavior: url(PIE.htc);
 }
-/* line 459, ../sass/global.style.scss */
+/* line 462, ../sass/global.style.scss */
 .filters .categories {
   margin-left: 28%;
   clear: both;
 }
 
-/* line 465, ../sass/global.style.scss */
+/* line 468, ../sass/global.style.scss */
 .filters.fixed {
   position: fixed;
   top: 0;
@@ -550,7 +554,7 @@ a:visited {
   z-index: 10;
   font-size: 0.5em;
 }
-/* line 471, ../sass/global.style.scss */
+/* line 474, ../sass/global.style.scss */
 .filters.fixed li {
   float: none;
 }

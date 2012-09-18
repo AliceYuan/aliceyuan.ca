@@ -3,6 +3,7 @@ $back_color: transparent;
 $overview_border_radius: 6px;
 $back_pink: #EDBBCF; //EDBBBB
 $dark_text: #443B35;
+$dark_text2: #6F6F6F;
 $color2: #AF7F7F;//#997E7E;//#7C778F;//grey-purple //#9C6C6C; //dark pink
 $color3: #8DB356;//#AF7F7F;//#AF6868;//#7C778F;//grey-purple //#9C6C6C; //dark pink
 $color2-hover: #645656;
@@ -47,14 +48,15 @@ $default-button-color: #00CCCC;
 .main.about .page-content{
   .about-me{
     font-weight: bold;
-    text-shadow: 0 1px rgba(100, 100, 100, 0.3);
+    // text-shadow: 0 1px rgba(100, 100, 100, 0.3);
+    color: $dark_text2;
     a{
       color: inherit;
-      border-bottom: 1px dashed white;
+      border-bottom: 1px dashed $dark_text2;
       @include transition(all, .5s);
     }
     a:hover, a:focus{
-      color: rgba(255,255,255,0.8);
+      color: $dark_text;
     }
     .google{
       // .char2{ color: blue}//G
@@ -414,4 +416,38 @@ $default-button-color: #00CCCC;
     }
   }
 }
+
+
+/* ==========================================================================
+ *  Contact Page
+ * ==========================================================================*/
+
+.contact{
+  max-width: 600px;
+  width: 90%;
+  padding: 5%;
+  h1.title{
+    font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+    margin-bottom: 1em;
+  }
+
+  a{
+    color: white;
+  }
+  a:hover, a:focus{
+    color: rgba(255,255,255,0.8);
+  }
+  p{
+    color: $dark_text2;
+    font-weight: bold;
+    a{
+      color: $dark_text2;
+      border-bottom: 1px dashed $dark_text2;
+    }
+    a:hover, a:focus{
+      color: $dark_text;
+    }
+  }
+}
+
 

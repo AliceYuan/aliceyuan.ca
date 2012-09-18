@@ -22,7 +22,7 @@
   height: 100%;
   display: inline-block;
   color: white;
-  background: #c29b8d;
+  background: #99a7a2;
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
@@ -30,7 +30,7 @@
 }
 /* line 41, ../sass/global.nav.scss */
 .main-menu-wrapper .logo a:hover, .main-menu-wrapper .logo a:focus {
-  background: #ad958c;
+  background: #86948f;
 }
 /* line 45, ../sass/global.nav.scss */
 .main-menu-wrapper .logo h1 {

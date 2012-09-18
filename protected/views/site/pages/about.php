@@ -1,7 +1,6 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - About';
 ?>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.lettering.js" ></script>
 <div class="main about">
   <div class="page-title-wrapper small">
       <div class="page-title clearfix small">
@@ -23,10 +22,10 @@ $this->pageTitle=Yii::app()->name . ' - About';
 
       </p>
 
-      <p>
-For most of my childhood, I fantasied about a career immersed in visual arts. But one little word flipped that dream upside down: programming.
-Perhaps one would consider me a newbie in the world of programming; but I dream high, I work hard and I learn fast.
-</p>
+<!--       <p> -->
+<!-- For most of my childhood, I fantasied about a career immersed in visual arts. But one little word flipped that dream upside down: programming. -->
+<!-- Perhaps one would consider me a newbie in the world of programming; but I dream high, I work hard and I learn fast. -->
+<!-- </p> -->
 <p>
 Call me young, but I'm not ill-experienced. I have interned as a web developer at  <a href="//myplanetdigital.com" class="mpd">Myplanet Digital</a> this past summer (2012) and have had the privilege of attending the <a href="http://googleblog.blogspot.ca/2011/08/fast-tracking-young-web-developers-at.html?"> computer science summer institute at Google </a>  the summer prior (2011).
 

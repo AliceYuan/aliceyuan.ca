@@ -74,7 +74,7 @@
 </head>
 
 <body class="<?php echo Yii::app()->name ?>">
-  <div id="contact-main" class="contact-main">
+  <div id="contact">
     <?php echo $content; ?>
   </div>
 </body>

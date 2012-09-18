@@ -36,7 +36,6 @@ function resizeTitle(){
   var sloganW = $slogan.width();
   var sloganMargin = parseInt($('.main .slogan p').css('margin-right'));
   $('.main .slogan p').width(((sloganW - sloganMargin)/2)*0.98);
-
   // equalHeightWidth($title);
 }
 
@@ -63,9 +62,11 @@ function resize(){
   resizeTitle();
   centerHorizontal($('.filters .categories'), $('.filters'));
   equalHeight($('.recent-posts ul li'));
-
 }
 
+
+function indexPage(){
+}
 
 //javascript functions for blog page
 function blogPage(){

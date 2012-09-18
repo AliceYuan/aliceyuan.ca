@@ -3,7 +3,7 @@ $this->pageTitle=Yii::app()->name . ' - Contact';
 $this->layout = 'blank-s';
 ?>
 <div class="main contact">
-  <h1> Want to chat? I can be found through these networks </h1>
+  <h1 class="title"> Want to chat? I can be found through these networks </h1>
 
   <ul>
     <li>

@@ -354,10 +354,18 @@ a:visited{
       }
     }
   }
-  ul.col li{
+  ul.posts{
+    overflow-x: scroll;
+    padding-bottom: 2em;
+  }
+  ul.posts .items{
+    width: 2000px;
+  }
+  ul.posts li{
     float: left;
     min-height: 5em;
     border: 1px solid #F0F0E5;
+    width: 330px;
   }
   .slide{
     margin: auto;
@@ -399,11 +407,6 @@ a:visited{
 /* ==================================================================================
  *      Global Contact Lightbox Styling
  * ==================================================================================*/
-
-#contact{
-  max-width: 900px;
-  display: none;
-}
 
 .contact-main{
   max-width: 90%;

@@ -28,7 +28,7 @@
         <a href="<?php echo Yii::app()->createUrl('post/index'); ?>"> Recent Posts</a>
       </h1>
 
-      <ul class="col">
+      <ul class="posts">
         <?php $this->widget('zii.widgets.CListView', array(
           'dataProvider'=>$dataProvider,
           'itemView'=>'_recent',
