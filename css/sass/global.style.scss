@@ -357,9 +357,11 @@ a:visited{
   ul.posts{
     overflow-x: scroll;
     padding-bottom: 2em;
+    @include filter-gradient(#ffffff, #ffffff, horizontal); // IE6-9
+    @include background-image(linear-gradient(left, rgba(255,255,255,1) 77%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%));
   }
   ul.posts .items{
-    width: 2000px;
+    width: 5000px;
   }
   ul.posts li{
     float: left;
@@ -407,12 +409,6 @@ a:visited{
 /* ==================================================================================
  *      Global Contact Lightbox Styling
  * ==================================================================================*/
-
-.contact-main{
-  max-width: 90%;
-  padding: 5% 0;
-  margin: 0 auto;
-}
 
 /* ==================================================================================
  *      Filter Buttons

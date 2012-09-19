@@ -15,12 +15,12 @@
 
   <div class="content">
   <?php if (isset($data->category)): ?>
-    <div class="category <?php echo $data->category ?>">
-      <a href="#">
-        <span></span>
-        <p><?php echo $data->category ?></p>
-      </a>
-    </div>
+    <!-- <div class="category <?php echo $data->category ?>"> -->
+    <!--   <a href="#"> -->
+    <!--     <span></span> -->
+    <!--     <p><?php echo $data->category ?></p> -->
+    <!--   </a> -->
+    <!-- </div> -->
   <?php endif ?>
     <div class="body">
 		<?php

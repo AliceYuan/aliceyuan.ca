@@ -25,7 +25,7 @@
   <div class="page-content">
     <div class="recent-posts clearfix">
       <h1 class="recent-title">
-        <a href="<?php echo Yii::app()->createUrl('post/index'); ?>"> Recent Posts</a>
+        <a href="<?php echo Yii::app()->createUrl('post/index'); ?>">Recent Posts</a>
       </h1>
 
       <ul class="posts">

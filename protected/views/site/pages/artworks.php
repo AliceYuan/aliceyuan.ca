@@ -23,7 +23,7 @@ $this->pageTitle=Yii::app()->name . ' - Art';
         'items'=>array(
           array('label'=>'all', 'url'=>'#', 'itemOptions'=>array('class'=>'label')),
           array('label'=>'drawing', 'url'=>'#', 'itemOptions'=>array('class'=>'label')),
-          array('label'=>'photgraphy', 'url'=>'#', 'itemOptions'=>array('class'=>'label')),
+          array('label'=>'photography', 'url'=>'#', 'itemOptions'=>array('class'=>'label')),
           array('label'=>'misc', 'url'=>'#', 'itemOptions'=>array('class'=>'label')),
         ),
         'linkLabelWrapper'=>'p',
@@ -40,6 +40,20 @@ $this->pageTitle=Yii::app()->name . ' - Art';
 
 
 
+<?
+  $string =array();
+  $filePath= "alice.local/img/art/" ;
+  $dir = opendir($filePath);
+  while ($file = readdir($dir)) {
+     if (eregi("\.png",$file) || eregi("\.jpg",$file) || eregi("\.gif",$file) ) {
+     $string[] = $file;
+     }
+  }
+  while (sizeof($string) != 0){
+    $img = array_pop($string);
+    echo "<img src='$filePath$img'  width='100px'/>";
+  }
+?>
 </div>
 
 

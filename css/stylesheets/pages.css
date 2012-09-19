@@ -469,35 +469,35 @@
  *  Contact Page
  * ==========================================================================*/
 /* line 425, ../sass/pages.scss */
-.contact {
+#contact {
   max-width: 600px;
   width: 90%;
   padding: 5%;
 }
 /* line 429, ../sass/pages.scss */
-.contact h1.title {
+#contact h1.title {
   font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
   margin-bottom: 1em;
 }
 /* line 434, ../sass/pages.scss */
-.contact a {
+#contact a {
   color: white;
 }
 /* line 437, ../sass/pages.scss */
-.contact a:hover, .contact a:focus {
+#contact a:hover, #contact a:focus {
   color: rgba(255, 255, 255, 0.8);
 }
 /* line 440, ../sass/pages.scss */
-.contact p {
+#contact p {
   color: #6f6f6f;
   font-weight: bold;
 }
 /* line 443, ../sass/pages.scss */
-.contact p a {
+#contact p a {
   color: #6f6f6f;
   border-bottom: 1px dashed #6f6f6f;
 }
 /* line 447, ../sass/pages.scss */
-.contact p a:hover, .contact p a:focus {
+#contact p a:hover, #contact p a:focus {
   color: #443b35;
 }
