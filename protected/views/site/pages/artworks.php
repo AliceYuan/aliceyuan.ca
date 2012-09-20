@@ -50,7 +50,7 @@ $this->pageTitle=Yii::app()->name . ' - Art';
   }
   while (sizeof($string) != 0){
     $img = array_pop($string);
-    echo "<img src='".Yii::app()->getBaseUrl()."'/img/art/$img'  width='100px'/>";
+    echo "<img src='/img/art/$img'  width='150px'/>";
   }
 ?>
 </div>
