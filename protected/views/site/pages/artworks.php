@@ -40,9 +40,8 @@ $this->pageTitle=Yii::app()->name . ' - Art';
 
 
 
-<?
-  $string =array();
-  $filePath= "alice.local/img/art/" ;
+<?php
+  $filePath = Yii::app()->getBasePath().'/'.'../img/art';
   $dir = opendir($filePath);
   while ($file = readdir($dir)) {
      if (eregi("\.png",$file) || eregi("\.jpg",$file) || eregi("\.gif",$file) ) {
@@ -51,7 +50,7 @@ $this->pageTitle=Yii::app()->name . ' - Art';
   }
   while (sizeof($string) != 0){
     $img = array_pop($string);
-    echo "<img src='$filePath$img'  width='100px'/>";
+    echo "<img src='".Yii::app()->getBaseUrl()."'/img/art/$img'  width='100px'/>";
   }
 ?>
 </div>

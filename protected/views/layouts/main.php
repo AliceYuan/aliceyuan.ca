@@ -137,7 +137,7 @@
       <ul class="clearfix">
       <li> <a class="fancybox" href="<?php echo Yii::app()->createUrl('/site/contact') ?>" title="Contact Me">Contact</a></li>
         <li> <a title="check site out on github" href="//github.com/AliceYuan/aliceyuan.ca">Github me</a></li>
-        <li> <a href="#" title="subscribe to RSS">RSS Feed</a></li>
+        <!-- <li> <a href="#" title="subscribe to RSS">RSS Feed</a></li> -->
       </ul>
 
       <!-- <div class="social links ss-icon"> -->
