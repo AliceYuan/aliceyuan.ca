@@ -41,17 +41,17 @@ $this->pageTitle=Yii::app()->name . ' - Art';
 
 
 <?php
-  $filePath = Yii::app()->getBasePath().'/'.'../img/art';
-  $dir = opendir($filePath);
-  while ($file = readdir($dir)) {
-     if (eregi("\.png",$file) || eregi("\.jpg",$file) || eregi("\.gif",$file) ) {
-     $string[] = $file;
-     }
-  }
-  while (sizeof($string) != 0){
-    $img = array_pop($string);
-    echo "<img src='/img/art/$img'  width='150px'/>";
-  }
+  // $filePath = Yii::app()->getBasePath().'/'.'../img/art';
+  // $dir = opendir($filePath);
+  // while ($file = readdir($dir)) {
+  //    if (eregi("\.png",$file) || eregi("\.jpg",$file) || eregi("\.gif",$file) ) {
+  //    $string[] = $file;
+  //    }
+  // }
+  // while (sizeof($string) != 0){
+  //   $img = array_pop($string);
+  //   echo "<img src='/img/art/$img'  width='150px'/>";
+  // }
 ?>
 </div>
 
