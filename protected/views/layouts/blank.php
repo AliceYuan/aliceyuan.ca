@@ -11,6 +11,7 @@
     <meta name="Description" content="I'm a girl from the University of Waterloo pursing an undergraduate degree in Software Engineering." />
     <meta name="Keywords" content="" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.7.2.min.js" ></script>
 
 </head>
 
