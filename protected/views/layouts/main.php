@@ -5,7 +5,7 @@
 	<meta name="language" content="en" />
 
 	<!-- blueprint CSS framework -->
-
+    <title>Alice Yuan</title>
     <meta name="viewport" content="width=device-width">
     <meta name="Description" content="I'm a girl from the University of Waterloo pursing an undergraduate degree in Software Engineering." />
     <meta name="Keywords" content="" />
