@@ -498,17 +498,18 @@ a:visited {
   clear: both;
   color: white;
   font-size: 1.25em;
+  margin-bottom: 5em;
 }
-/* line 421, ../sass/global.style.scss */
+/* line 422, ../sass/global.style.scss */
 .filters h3 {
   text-align: center;
 }
-/* line 424, ../sass/global.style.scss */
+/* line 425, ../sass/global.style.scss */
 .filters li {
   float: left;
   margin: 0 1em;
 }
-/* line 430, ../sass/global.style.scss */
+/* line 431, ../sass/global.style.scss */
 .filters button {
   color: white;
   cursor: pointer;
@@ -521,11 +522,11 @@ a:visited {
   padding: 0;
   margin: 0;
 }
-/* line 447, ../sass/global.style.scss */
+/* line 448, ../sass/global.style.scss */
 .filters button span {
   display: block;
-  width: 3.5em;
-  height: 3.5em;
+  width: 3em;
+  height: 3em;
   background: #bcd496;
   margin: .5em auto;
   border: 0.25em white solid;
@@ -540,13 +541,53 @@ a:visited {
   border-radius: 50%;
   behavior: url(PIE.htc);
 }
-/* line 458, ../sass/global.style.scss */
+/* line 459, ../sass/global.style.scss */
 .filters .categories {
   margin-left: 28%;
   clear: both;
 }
 
-/* line 464, ../sass/global.style.scss */
+/* line 465, ../sass/global.style.scss */
+.filters li.active span {
+  background-color: #B5D87B !important;
+}
+
+/* line 470, ../sass/global.style.scss */
+.filters li.all span {
+  background: #bcd496 url("../../img/white/plus_16x16.png") no-repeat center;
+}
+
+/* line 474, ../sass/global.style.scss */
+.filters li.general span {
+  background: #bcd496 url("../../img/white/user_18x24.png") no-repeat center;
+}
+
+/* line 478, ../sass/global.style.scss */
+.filters li.tech span {
+  background: #bcd496 url("../../img/white/iphone_18x24.png") no-repeat center;
+}
+
+/* line 482, ../sass/global.style.scss */
+.filters li.design span {
+  background: #bcd496 url("../../img/white/lightbulb_15x24.png") no-repeat center;
+}
+
+/* line 486, ../sass/global.style.scss */
+.filters li.drawing span {
+  background: #bcd496 url("../../img/white/pen_alt_fill_24x24.png") no-repeat center;
+}
+
+/* line 490, ../sass/global.style.scss */
+.filters li.misc span {
+  background: #bcd496 url("../../img/white/box_24x24.png") no-repeat center;
+}
+
+/* line 494, ../sass/global.style.scss */
+.filters li.photography span {
+  background: #bcd496 url("../../img/white/camera_24x24.png") no-repeat center;
+}
+
+/* line 498, ../sass/global.style.scss */
 .filters.fixed {
   position: fixed;
   top: 0;
@@ -554,7 +595,7 @@ a:visited {
   z-index: 10;
   font-size: 0.5em;
 }
-/* line 470, ../sass/global.style.scss */
+/* line 504, ../sass/global.style.scss */
 .filters.fixed li {
   float: none;
 }

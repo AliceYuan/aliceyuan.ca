@@ -67,9 +67,13 @@
     <script>
     $(document).ready(function() {
       $(".fancybox a").fancybox({
-        'type': 'iframe',
       });
       $("a.fancybox").fancybox({
+      });
+      $(".iframe-fancybox a").fancybox({
+        'type': 'iframe',
+      });
+      $("a.iframe-fancybox").fancybox({
         'type': 'iframe',
       });
     });
@@ -104,7 +108,7 @@
           array('label'=>'Blog', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/notepencil32.png','url'=>array('post/index')),
           array('label'=>'Artworks', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/brush_32x32.png','url'=>array('site/page', 'view'=>'artworks')),
           array('label'=>'Resume', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/article_32x32.png','url'=>array('site/page', 'view'=>'resume')),
-          array('label'=>'Contact', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/chat_alt_fill_32x32.png','url'=>array('site/contact'), 'itemOptions'=>array('class'=>'fancybox')),
+          array('label'=>'Contact', 'imageSrc'=>Yii::app()->request->baseUrl.'/img/white/chat_alt_fill_32x32.png','url'=>array('site/contact'), 'itemOptions'=>array('class'=>'iframe-fancybox')),
         ),
         'linkLabelWrapper'=>'p',
         'activeCssClass'=>'active',
@@ -135,7 +139,7 @@
 
       </p>
       <ul class="clearfix">
-      <li> <a class="fancybox" href="<?php echo Yii::app()->createUrl('/site/contact') ?>" title="Contact Me">Contact</a></li>
+      <li> <a class="iframe-fancybox" href="<?php echo Yii::app()->createUrl('/site/contact') ?>" title="Contact Me">Contact</a></li>
         <li> <a title="check site out on github" href="//github.com/AliceYuan/aliceyuan.ca">Github me</a></li>
         <!-- <li> <a href="#" title="subscribe to RSS">RSS Feed</a></li> -->
       </ul>

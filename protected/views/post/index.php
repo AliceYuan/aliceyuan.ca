@@ -19,10 +19,10 @@
 
       <?php $this->widget('application.components.FilterMenu',array(
         'items'=>array(
-          array('label'=>'all', 'itemOptions'=>array('class'=>'label')),
-          array('label'=>'tutorials', 'itemOptions'=>array('class'=>'label')),
-          array('label'=>'life', 'itemOptions'=>array('class'=>'label')),
-          array('label'=>'discovery','itemOptions'=>array('class'=>'label')),
+          array('label'=>'all', 'itemOptions'=>array('class'=>'label active')),
+          array('label'=>'general', 'itemOptions'=>array('class'=>'label')),
+          array('label'=>'tech', 'itemOptions'=>array('class'=>'label')),
+          array('label'=>'design','itemOptions'=>array('class'=>'label')),
         ),
         'linkLabelWrapper'=>'p',
         'activeCssClass'=>'active',

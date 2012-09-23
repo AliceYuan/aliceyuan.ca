@@ -2,7 +2,8 @@ $(document).ready(function(){
   var default_button_size = '30px';
   var hover_button_size = '40px';
   resize();
-  filter('.blog-posts','.filters');
+  blogPage();
+  artworksPage();
   $(window).resize(function() {
     resize();
   });
@@ -70,6 +71,22 @@ function indexPage(){
 
 //javascript functions for blog page
 function blogPage(){
+  filter('.blog-posts','.filters','[id*="post-"]','slide');
+}
+//javascript functions for artworks page
+function artworksPage(){
+  filter('.art-gallery','.filters','[class*="img-"]','hide');
+
+  $('.filters').find('button').click(function(){
+    label = $(this).find('p').text();
+    $('.art-gallery li a').each(function(){
+      if (label == 'all'){
+        $(this).attr('rel', 'gallery');
+      } else if ($(this).hasClass(label)){
+        $(this).attr('rel', 'gallery-'+label);
+      }
+    });
+  });
 }
 
 //functions specifically for front page
@@ -81,30 +98,56 @@ function frontPage(){
 // Filter Function
 // =============================================================
 
-function filter(tofilter, filtersDiv){
+function filter(toFilterParent, filtersDiv, toFilterName, effect){
   //get label of each filter
-  var $tofilter = $(tofilter);
+  var $toFilterParent = $(toFilterParent);
   var $filtersDiv = $(filtersDiv);
   var label;
-  var delay = 100;
-  var slideDownTime = 700;
-  var slideUpTime = 500;
   $filtersDiv.find('button').click(function(){
+    $filtersDiv.find('li.label').each(function(){
+      $(this).removeClass('active');
+    });
+    $(this).parent().addClass('active');
     label = $(this).find('p').text();
-    console.log(label);
-    if (label == 'all'){
-      $tofilter.find('[id*="post-"]').each(function(i){
-        $(this).delay(i*delay).slideDown(slideDownTime);
-      });
-    }else{
-      $tofilter.find('[id*="post-"]').each(function(i){
-        if ($(this).hasClass(label)){
+
+    if (effect == 'slide'){
+      var delay = 100;
+      var slideDownTime = 700;
+      var slideUpTime = 500;
+      if (label == 'all'){
+        $toFilterParent.find(toFilterName).each(function(i){
           $(this).delay(i*delay).slideDown(slideDownTime);
-        }else{
-          $(this).delay(i*delay).slideUp(slideUpTime);
-        }
-      });
-    }
+        });
+      }else{
+        $toFilterParent.find(toFilterName).each(function(i){
+          if ($(this).hasClass(label)){
+            $(this).delay(i*delay).slideDown(slideDownTime);
+          }else{
+            $(this).delay(i*delay).slideUp(slideUpTime);
+          }
+        });
+      }
+    }//end slide effect
+    else if(effect == 'hide'){
+      var delay = 100;
+      var fadeInTime = 100;
+      var fadeOutTime = 100;
+      if (label == 'all'){
+        $toFilterParent.find(toFilterName).each(function(i){
+          $(this).delay(i*delay).fadeIn(fadeInTime);
+          delay = delay-1;
+        });
+      }else{
+        $toFilterParent.find(toFilterName).each(function(i){
+          if ($(this).hasClass(label)){
+            $(this).delay(i*delay).fadeIn(fadeInTime);
+          }else{
+            $(this).delay(i*delay).fadeOut(fadeOutTime);
+          }
+          delay = delay-1;
+        });
+      }
+    }//end hide effect
   });
 }
 

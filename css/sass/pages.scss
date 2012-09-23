@@ -37,6 +37,12 @@ $default-button-color: #00CCCC;
   margin-left: -3%;
 }
 
+#page-artworks .page-title-wrapper .page-title h1 {
+  font-size: 1.25em;
+  margin-top: 40%;
+  margin-left: -3%;
+}
+
 /* ==========================================================================
  *  About Page
  * ==========================================================================*/
@@ -417,12 +423,81 @@ $default-button-color: #00CCCC;
   }
 }
 
+/* ==========================================================================
+ *  Artworks Page
+ * ==========================================================================*/
+
+#page-artworks{
+  margin-bottom: 10em;
+  display: block;
+  .crop{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+
+    border: 5px white solid;
+    margin: 5px;
+    @include border-radius(5px);
+    @include transition(all 0.6s);
+  }
+  .img-border{
+  }
+  img{
+    // @include border-radius(5px);
+    overflow: hidden;
+    // background: white;
+  }
+}
+
+/* ==========================================================================
+ *  Artworks Page Responsive
+ * ==========================================================================*/
+@media (max-width: 479px){
+  #page-artworks{
+    .art-gallery{
+      margin-left: 5%;
+      li .crop{
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 766px) {
+  #page-artworks{
+    .art-gallery{
+      margin-left: 5%;
+      li .crop{
+        width: 140px;
+        height: 140px;
+      }
+    }
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #page-artworks{
+    .art-gallery{
+      margin-left: 6%;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  #page-artworks{
+    .art-gallery{
+      margin-left: 8%;
+    }
+  }
+}
+
+
 
 /* ==========================================================================
  *  Contact Page
  * ==========================================================================*/
 
-#contact{
+#page-contact{
   max-width: 600px;
   width: 90%;
   padding: 5%;
