@@ -1,15 +1,15 @@
 
 <h2 class="title"> <?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?></h2>
-
-<div name="post-<?php echo date('mdy',$data->create_time)?>" class="post-<?php echo $data->category?>" id="post-<?php echo date('mdy',$data->create_time)?>">
-  <div class="post-indicator">
-    <div class="point"> </div>
-  </div>
   <div class="date">
     <p><span class="M"><?php echo date('M',$data->create_time); ?></span>
     <span class="D"><?php echo date('j',$data->create_time); ?></span>
     <span class="Y"><?php echo date('Y',$data->create_time); ?></span>
     </p>
+  </div>
+
+<div name="post-<?php echo date('mdy',$data->create_time)?>" class="post-<?php echo $data->category?>" id="post-<?php echo date('mdy',$data->create_time)?>">
+  <div class="post-indicator">
+    <div class="point"> </div>
   </div>
 
 

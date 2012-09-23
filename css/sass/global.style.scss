@@ -369,6 +369,7 @@ a:visited{
   }
   ul.posts li a{
     border-top: .5em solid white;
+    width: 100%;
   }
   ul.posts li a:hover, ul.posts li a:focus {
     border-top: .5em solid $color3;

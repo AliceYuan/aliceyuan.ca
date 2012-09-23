@@ -119,6 +119,14 @@ $default-button-color: #00CCCC;
  *  Blog Page - single page
  * ==========================================================================*/
 .main.blog-post .page-content{
+  position: relative;
+}
+.main.blog-post .page-content .date{
+  position: absolute;
+    top: 2.5em;
+    right: 1em;
+  font-size: 1.3em;
+
 }
 
 .main.blog-post .page-content{
@@ -126,6 +134,8 @@ $default-button-color: #00CCCC;
   h2.title a{
     color: white;
     margin-left: 0.7em;
+    font-weight: bold;
+    font-size: 1.4em;
   }
 
   div[id*='post-']{
@@ -134,7 +144,8 @@ $default-button-color: #00CCCC;
     position: relative;
     @include border-radius(2em);
     @include box-shadow(-3px 3px 10px rgba(50, 50, 51, 0.5));
-    padding: 2em 3%;
+    padding: 3em 6%;
+    font-family: Century Gothic, "Helvetica Neue",arial,sans-serif;
   }
   .content .body{
   }
@@ -301,7 +312,7 @@ $default-button-color: #00CCCC;
   }
   .blog-posts{
     min-height: 500px;
-    // width: 90%;
+    width: 90%;
     color: $dark_text;
     .content{
       padding: 2em;
@@ -429,6 +440,7 @@ $default-button-color: #00CCCC;
 
 .main.blog .page-content .category.general a span{
   background: url('../../img/white/user_18x24.png') no-repeat center;
+  background-size: 15px 21px;
 }
 
 .main.blog .page-content .category.tech a span{
