@@ -463,24 +463,44 @@
   position: absolute;
   top: 0;
   left: 1.5em;
-  background: url("../../img/icons_sprite.png") -345px -64px;
 }
-/* line 417, ../sass/pages.scss */
+/* line 416, ../sass/pages.scss */
 .main.blog .page-content .category a p {
   font-weight: bold;
   text-transform: uppercase;
   margin: auto;
 }
 
+/* line 425, ../sass/pages.scss */
+.main.blog .page-content .category.discovery a span {
+  background: url("../../img/white/magnifying_glass_24x24.png") no-repeat center;
+  background-size: 20px;
+}
+
+/* line 430, ../sass/pages.scss */
+.main.blog .page-content .category.general a span {
+  background: url("../../img/white/user_18x24.png") no-repeat center;
+}
+
+/* line 434, ../sass/pages.scss */
+.main.blog .page-content .category.tech a span {
+  background: url("../../img/white/iphone_18x24.png") no-repeat center;
+}
+
+/* line 437, ../sass/pages.scss */
+.main.blog .page-content .category.design a span {
+  background: url("../../img/white/lightbulb_15x24.png") no-repeat center;
+}
+
 /* ==========================================================================
  *  Artworks Page
  * ==========================================================================*/
-/* line 430, ../sass/pages.scss */
+/* line 445, ../sass/pages.scss */
 #page-artworks {
   margin-bottom: 10em;
   display: block;
 }
-/* line 433, ../sass/pages.scss */
+/* line 448, ../sass/pages.scss */
 #page-artworks .crop {
   width: 200px;
   height: 200px;
@@ -498,7 +518,7 @@
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
-/* line 446, ../sass/pages.scss */
+/* line 461, ../sass/pages.scss */
 #page-artworks img {
   overflow: hidden;
 }
@@ -507,35 +527,35 @@
  *  Artworks Page Responsive
  * ==========================================================================*/
 @media (max-width: 479px) {
-  /* line 458, ../sass/pages.scss */
+  /* line 473, ../sass/pages.scss */
   #page-artworks .art-gallery {
     margin-left: 5%;
   }
-  /* line 460, ../sass/pages.scss */
+  /* line 475, ../sass/pages.scss */
   #page-artworks .art-gallery li .crop {
     width: 100px;
     height: 100px;
   }
 }
 @media (min-width: 480px) and (max-width: 766px) {
-  /* line 470, ../sass/pages.scss */
+  /* line 485, ../sass/pages.scss */
   #page-artworks .art-gallery {
     margin-left: 5%;
   }
-  /* line 472, ../sass/pages.scss */
+  /* line 487, ../sass/pages.scss */
   #page-artworks .art-gallery li .crop {
     width: 140px;
     height: 140px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  /* line 481, ../sass/pages.scss */
+  /* line 496, ../sass/pages.scss */
   #page-artworks .art-gallery {
     margin-left: 6%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 488, ../sass/pages.scss */
+  /* line 503, ../sass/pages.scss */
   #page-artworks .art-gallery {
     margin-left: 8%;
   }
@@ -543,36 +563,36 @@
 /* ==========================================================================
  *  Contact Page
  * ==========================================================================*/
-/* line 500, ../sass/pages.scss */
+/* line 515, ../sass/pages.scss */
 #page-contact {
   max-width: 600px;
   width: 90%;
   padding: 5%;
 }
-/* line 504, ../sass/pages.scss */
+/* line 519, ../sass/pages.scss */
 #page-contact h1.title {
   font-family: QuicksandBookRegular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
   margin-bottom: 1em;
 }
-/* line 509, ../sass/pages.scss */
+/* line 524, ../sass/pages.scss */
 #page-contact a {
   color: white;
 }
-/* line 512, ../sass/pages.scss */
+/* line 527, ../sass/pages.scss */
 #page-contact a:hover, #page-contact a:focus {
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 515, ../sass/pages.scss */
+/* line 530, ../sass/pages.scss */
 #page-contact p {
   color: #6f6f6f;
   font-weight: bold;
 }
-/* line 518, ../sass/pages.scss */
+/* line 533, ../sass/pages.scss */
 #page-contact p a {
   color: #6f6f6f;
   border-bottom: 1px dashed #6f6f6f;
 }
-/* line 522, ../sass/pages.scss */
+/* line 537, ../sass/pages.scss */
 #page-contact p a:hover, #page-contact p a:focus {
   color: #443b35;
 }
