@@ -519,7 +519,7 @@ $this->layout = 'blank';
             <li class="n3">Python</li>
             <li class="n4">MySQL</li>
             <li class="n5">Apache</li>
-            <li class="n6">Javascript</li>
+            <li class="n6">JavaScript</li>
             <li class="n7">PHP CMS: Drupal</li>
             <li class="n8">Jquery</li>
             <li class="n9">CSS/CSS3</li>
@@ -597,14 +597,14 @@ $this->layout = 'blank';
           <h4>Google Computer Science Summer Institute - Student </h4>
           <h5>Mountain View, CA <span class="date-right">Jun. 2011 - Jul. 2011</span></h5>
           <ul>
-            <li>Built and deployed a web application game (<a href="http://tictactoe-cssi.appspot.com">http://tictactoe-cssi.appspot.com</a>) using App Engine SDK for Python and Javascript within the constraint of 4 days.</li>
+            <li>Built and deployed a web application game (<a href="http://tictactoe-cssi.appspot.com">http://tictactoe-cssi.appspot.com</a>) using App Engine SDK for Python and JavaScript within the constraint of 4 days.</li>
             <li>Overtook responsibility as project manager who prioritized and motivated team toward project completion. </li>
             <li>Presented application to students and employees of Google and was voted best overall web application.</li>
           </ul>
           </li>
         </ul>
       </div>
-
+	<!-- john was here -->
 
       <div class="projects">
         <h2 class="caps-title">Projects</h2>
